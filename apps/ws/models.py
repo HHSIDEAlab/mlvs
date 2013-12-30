@@ -42,6 +42,8 @@ class License(models.Model):
         d['first_name'] = self.first_name
         d['last_name'] = self.last_name
         d['state'] = self.state
+        d['number'] = self.number
+        d['npi'] = self.npi
         d['status'] = self.status
         d['created_at'] = str(self.created_at)
         d['updated_at'] = str(self.updated_at)
