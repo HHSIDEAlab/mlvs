@@ -1,0 +1,8 @@
+*.pyc
+*~
+db/*
+*.kpf
+.idea/*
+3rdparty/*
+settings_local.py
+
