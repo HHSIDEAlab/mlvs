@@ -4,7 +4,7 @@ from localflavor.us.us_states import US_STATES
 import json
 from collections import OrderedDict
 
-LICENSE_STATUS_CHOICES =( ("UNK", "Unknown"),
+LICENSE_STATUS_CHOICES =( ("", "Unknown"),
                           ("ACTIVE","Active"),
                           ("ACTIVE_WITH_RESTRICTIONS","Active with Restrictions"),
                           ("EXPIRED","Expired"),
@@ -42,6 +42,7 @@ class License(models.Model):
         d['first_name'] = self.first_name
         d['last_name'] = self.last_name
         d['state'] = self.state
+        d['license_type'] = self.license_type
         d['number'] = self.number
         d['npi'] = self.npi
         d['status'] = self.status
