@@ -6,13 +6,13 @@ from django.utils.translation import ugettext_lazy as _
 from models import License
 
 
-def lookup_via_npi(request, npi):
-    l = get_object_or_404(License, npi=npi)
+def lookup_via_npi(request, state, npi):
+    l = get_object_or_404(License, state=state, npi=npi)
     return HttpResponse(l.as_json(), mimetype="application/json")
     
 
-def lookup_via_license(request, number):
-    l = get_object_or_404(License, number=number)
+def lookup_via_license(request, state, number):
+    l = get_object_or_404(License, state=state, number=number)
     return HttpResponse(l.as_json(), mimetype="application/json")
     
 def home(request):

@@ -11,9 +11,12 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     
-    url(r'^', home, name="home"),
-    url(r'^npi/(?P<npi>\S+)', lookup_via_npi, name="lookup_via_npi"),
-    url(r'^license/(?P<number>\S+)',
-                    lookup_via_license, name="lookup_via_license"),
+    url(r'^$', home, name="home"),
+    
+    url(r'^npi/(?P<state>\S+)/(?P<npi>\S+).json', lookup_via_npi,
+            name="lookup_via_npi"),
+    
+    url(r'^license/(?P<state>\S+)/(?P<number>\S+).json', lookup_via_license,
+            name="lookup_via_license"),
 
 )
