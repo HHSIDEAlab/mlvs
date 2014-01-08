@@ -1,13 +1,20 @@
 Medical License Validation Specification/System (MVLS)
-==================
+======================================================
 
-MVLS refers to both a technical specification, "Medical License Verification Specification" and a system, "Medical License Verification System" a reference implementation for the Specification. Both the specification and system are described in this document.  This is a draft and should be considered in development. Comments and feedback are welcome.
+MVLS refers to both a technical specification, "Medical License Verification
+Specification" and a system, "Medical License Verification System" a reference
+implementation for the Specification. Both the specification and system are
+described in this document.  This is a draft and should be considered in
+development. Comments and feedback are welcome.
 
-The goal of MVLS is to define a very simple and common way for medical license information to be shared. The specification is a RESTful protocol designed so it is simple enough to implment without the need to write any software.
+The goal of MVLS is to define a very simple and common way for medical license
+information to be shared. The specification is a simple RESTful protocol that
+can be implmented without the need to write any software. Adherence of the
+specification can be achieved by copying files to a web server with a
+predictable URL pattern.
 
-Adherence of the specification can be achieved by copying files to a web server with a predictable URL pattern.
-
-This document contains the specification itself followed by information on the system (a django-based reference implementation).
+This document contains the specification itself followed by information on the
+system (a django-based reference implementation).
 
 
 Medical License Verification Specification
@@ -17,7 +24,7 @@ Version 0.0.1 (DRAFT)
 
 First Published: December 31, 2013
 
-Last Updated: December 31, 2013
+Last Updated: January 7, 2013
 
 Autorative URL: https://github.com/HHSIDEAlab/mlvs
 
@@ -35,17 +42,14 @@ To create a system that adheres to thisMedical License Verification Specificatio
 More Details About the Response
 -------------------------------
 
-
-
 <table>
 
 <thead>
-<tr>
-<td>Field Name</td>
-<td>Details</td>
-<td>Required</td>
-
-</tr>
+  <tr>
+    <td>Field Name</td>
+    <td>Details</td>
+    <td>Required</td>
+  </tr>
 </thead>
 
 <tr>
@@ -124,25 +128,28 @@ The examples below are demonstrated with "curl", a command-line web client that 
 
 Below is an example request using curl.  In this example, the server is "somelicenseauthority.example.com", the sate is "WV", and the license number is "234234534".
 
-    curl https://somelicenseauthority.example.com/license/WV/2342345345
+    curl https://somelicenseauthority.example.com/license/CA/3242345345.json
 
 The server responds with:
 
-    {
-    "first_name": "Foo",
-    "last_name": "Bar",
-    "state": "WV",
+    { 
+    "first_name": "Leonard",
+    "last_name": "McCoy",
+    "state": "CA",
     "license_type": "MD",
-    "number": "2342345345",
-    "npi": "1223353456",
+    "number": "3242345345",
+    "npi": "1323353456",
     "status": "ACTIVE",
-    "created_at": "2013-12-30",
-    "updated_at": "2013-12-30"
+    "issued_by": "California State Medical Board",
+    "date_issued": "2010-12-30",
+    "date_expires": "2015-12-30",
+    "date_created": "2013-12-30",
+    "date_updated": "2014-01-30"
      }
 
 If we do the same thing again with the verbose "-v" option we can see the HTTP response code and the mimetype.
 
-    curl -v https://somelicenseauthority.example.com/license/WV/2342345345
+    curl -v https://somelicenseauthority.example.com/license/WV/2342345345.json
 
 Responds with
 
@@ -152,23 +159,27 @@ Responds with
     < Content-Type: application/json
     ...
     {
-        "first_name": "Foo",
-        "last_name": "Bar",
+        "first_name": "River",
+        "last_name": "Song",
         "state": "WV",
         "license_type": "MD",
         "number": "2342345345",
         "npi": "1223353456",
         "status": "ACTIVE",
-        "created_at": "2013-12-30",
-        "updated_at": "2013-12-30"
-    * Closing connection #0
+        "issued_by": "California State Medical Board",
+        "date_issued": "2010-12-30",
+        "date_expires": "2015-12-30",
+        "date_created": "2013-12-30",
+        "date_updated": "2014-01-30"
     }
 
-Here is a negative example where the resource does not exist. We will use the "-I" flag to just read the response head.
+Here is a negative example where the resource does not exist. We will use the
+"-I" flag to just read the response head.
 
     curl -I https://somelicenseauthority.example.com/license/CA/999999999
 
-This response means there is no medical license issued in CA with the number 999999999. The body of the response is unimportant, since there is no record.
+This response means there is no medical license issued in CA with the number
+999999999. The body of the response is unimportant, since there is no record.
 
     HTTP/1.0 404 NOT FOUND
     ...
@@ -177,8 +188,11 @@ Implementation Notes
 --------------------
 
 There are three ways to go about implementing this specification:
+
 1. _Upload Files to a Web Server_ - Create, and periodically update, the necessary JSON files and place them on any web server within a directory "license" and a subdirectory "[STATE]" where [STATE] is a a two letter abbreviation.  If you are only managing license for one state you would only have one subdirectory here.  You do not need to stand up a dedicated web server to implement this specification. You can use a content delivery network, such as Amazon AWS S3, to implement this specification. The mention of S3 is provided as an example, and should not be misconstrued as an endorsement.
+
 2. _Roll Your Own_ - Implement the above specification using any technology stack you like.
+
 3. _Reference Implementation_ - Use the free, open-source reference implementation described below.
 
 Medical License Verification System - Reference Implemenation
