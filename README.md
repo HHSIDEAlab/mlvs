@@ -72,17 +72,30 @@ offical two-letter abbreviations. See https://www.usps.com/send/official-abbrevi
 </tr>
 
 <tr>
-<td>license\_type</td>
+<td>license_type</td>
 <td>A three-letter string containing a code resenting a license type.
 Codes can be found in the document `ProviderLicenseUniverseFeb2014.csv` contained
 in this repository.
 
-Valid codes examples include:<br></br> 
+Valid license_type examples include:<br></br> 
 "MDR" (Medical Doctor)<br></br>
 "DOS"(Doctor of Osteopathy)<br></br>
 "PAS" (Physician Assistant)</td>
 <td>Y</td>
 </tr>
+
+<tr>
+<td>code</td>
+<td>Concatenation of state code and license type.
+
+Valid code examples include:<br></br> 
+"CA-MDR" (Medical Doctor) in California<br></br>
+"VA-DOS"(Doctor of Osteopathy) in Virginia<br></br>
+"NY-PAS" (Physician Assistant) in New York</td>
+<td>Y</td>
+</tr>
+
+
 
 <tr>
 <td>number</td>
