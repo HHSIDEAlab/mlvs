@@ -24,7 +24,7 @@ Version 0.0.1 (DRAFT)
 
 First Published: December 31, 2013
 
-Last Updated: January 7, 2013
+Last Updated: February 21, 2014
 
 Autorative URL: https://github.com/HHSIDEAlab/mlvs
 
@@ -66,15 +66,21 @@ More Details About the Response
 
 <tr>
 <td>state</td>
-<td>A two-letter string representing the state..  This filed shall onlyuse offical two-letter abbreviations. See https://www.usps.com/send/official-abbreviations.htm </td>
+<td>A two-letter string representing the state..  This filed shall onlyuse
+offical two-letter abbreviations. See https://www.usps.com/send/official-abbreviations.htm </td>
 <td>Y</td>
 </tr>
 
 <tr>
 <td>license\_type</td>
-<td>A two-letter string containing a code resenting a license type. Valid codes are:<br></br> 
-"MD" (Medical Doctor)<br></br>
-"DO"(Doctor of Osteopathy)<br></br> "PA" (Physician Assistant)</td>
+<td>A three-letter string containing a code resenting a license type.
+Codes can be found in the document `ProviderLicenseUniverseFeb2014.csv` contained
+in this repository.
+
+Valid codes examples include:<br></br> 
+"MDR" (Medical Doctor)<br></br>
+"DOS"(Doctor of Osteopathy)<br></br>
+"PAS" (Physician Assistant)</td>
 <td>Y</td>
 </tr>
 
@@ -93,7 +99,8 @@ More Details About the Response
 
 <tr>
 <td>status</td>
-<td>A string containing the a code indicating the status of the license. Valid codes are: <br></br>
+<td>A string containing the a code indicating the status of the license. Valid
+codes are: <br></br>
      "ACTIVE" (Active) <br></br>
      "ACTIVE\_WITH\_RESTRICTIONS (Active with Restrictions) <br></br>
      "EXPIRED" (Expired) <br></br>
@@ -123,24 +130,30 @@ More Details About the Response
 Examples
 --------
 
-The examples below are demonstrated with "curl", a command-line web client that is installed on Mac OSX and Linux and can be downloaded for Windows.  Curl is just used as an example.  You could use many other tools or pretty much any programming language.
+The examples below are demonstrated with "curl", a command-line web client that
+is installed on Mac OSX and Linux and can be downloaded for Windows.
+Curl is just used as an example.  You could use many other tools or pretty
+much any programming language.
 
 
-Below is an example request using curl.  In this example, the server is "somelicenseauthority.example.com", the sate is "WV", and the license number is "234234534".
+Below is an example request using curl.  In this example, the server is
+"somelicenseauthority.example.com", the state is "WV", the license type is MDR,
+(Medical Doctor) and the license number is "234234534".
 
-    curl https://somelicenseauthority.example.com/license/CA/3242345345.json
+    curl https://somelicenseauthority.example.com/license/WV-MDR/3242345345.json
 
 The server responds with:
 
     { 
     "first_name": "Leonard",
     "last_name": "McCoy",
-    "state": "CA",
-    "license_type": "MD",
+    "state": "WV",
+    "license_type": "MDR",
+    "code": "WV-MDR",
     "number": "3242345345",
     "npi": "1323353456",
     "status": "ACTIVE",
-    "issued_by": "California State Medical Board",
+    "issued_by": "West Virginia State Medical Board",
     "date_issued": "2010-12-30",
     "date_expires": "2015-12-30",
     "date_created": "2013-12-30",
@@ -149,7 +162,7 @@ The server responds with:
 
 If we do the same thing again with the verbose "-v" option we can see the HTTP response code and the mimetype.
 
-    curl -v https://somelicenseauthority.example.com/license/WV/2342345345.json
+    curl -v https://somelicenseauthority.example.com/license/CA-MDR/2342345345.json
 
 Responds with
 
@@ -161,8 +174,9 @@ Responds with
     {
         "first_name": "River",
         "last_name": "Song",
-        "state": "WV",
-        "license_type": "MD",
+        "state": "CA",
+        "license_type": "MDR",
+        "code": "CA-MDR",
         "number": "2342345345",
         "npi": "1223353456",
         "status": "ACTIVE",
@@ -176,7 +190,7 @@ Responds with
 Here is a negative example where the resource does not exist. We will use the
 "-I" flag to just read the response head.
 
-    curl -I https://somelicenseauthority.example.com/license/CA/999999999
+    curl -I https://somelicenseauthority.example.com/license/CA-MDR/999999999
 
 This response means there is no medical license issued in CA with the number
 999999999. The body of the response is unimportant, since there is no record.
@@ -189,17 +203,31 @@ Implementation Notes
 
 There are three ways to go about implementing this specification:
 
-1. _Upload Files to a Web Server_ - Create, and periodically update, the necessary JSON files and place them on any web server within a directory "license" and a subdirectory "[STATE]" where [STATE] is a a two letter abbreviation.  If you are only managing license for one state you would only have one subdirectory here.  You do not need to stand up a dedicated web server to implement this specification. You can use a content delivery network, such as Amazon AWS S3, to implement this specification. The mention of S3 is provided as an example, and should not be misconstrued as an endorsement.
+1. _Upload Files to a Web Server_ - Create, and periodically update, the
+necessary JSON files and place them on any web server within a directory
+"license" and a subdirectory "[STATE]-[LICENSE-TYPE]" where [STATE] is a a
+two letter abbreviation and [LICENSE-TYPE] is a three letter code corresponding
+to a license type.  It is not necessary to stand up a dedicated web server to
+implement this specification. You can use a content delivery network, such as
+Amazon AWS S3, to implement this specification. The mention of S3 is provided as
+an example, and should not be misconstrued as an endorsement.
 
-2. _Roll Your Own_ - Implement the above specification using any technology stack you like.
+2. _Roll Your Own_ - Implement the above specification using any technology stack
+you like.
 
-3. _Reference Implementation_ - Use the free, open-source reference implementation described below.
+3. _Reference Implementation_ - Use the free, open-source reference
+implementation described below.
 
 Medical License Verification System - Reference Implemenation
 ===================================
 
-The project contained within this GitHub repository is a reference implmentaion of the specification.  It uses Django and can be deployed on almost any operating system or web server.  The reference implementation is fully functional and assumes one or several managers will manage the data.By default the underlying database is SQLite, but this can be changed. Read more about Django here: http://djangoproject.com .
+The project contained within this GitHub repository is a reference implmentaion
+of the specification.  It uses Django and can be deployed on almost any operating
+system or web server.  The reference implementation is fully functional and
+assumes one or several managers will manage the data.By default the underlying
+database is SQLite, but this can be changed.
+Read more about Django here: http://djangoproject.com .
 
 License records can be added and updated via Django's standard administrative interface.
 
--ADD MORE DETAIL HERE-
+

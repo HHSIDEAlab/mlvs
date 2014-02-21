@@ -1,0 +1,795 @@
+MAC,code,credential,license_type,provider_type,state
+2,AK-APN,Certified Advanced Nurse Practitioner,APN,1,AK
+2,AK-CNA,Certified Registered Nurse Anesthetist,CNA,1,AK
+2,AK-CNM,Certified Nurse Midwife,CNM,1,AK
+2,AK-CNS,Certified Nurse Specialist,CNS,1,AK
+2,AK-DCH,Doctor of Chiropractics,DCH,1,AK
+2,AK-DEN,Dentist,DEN,1,AK
+2,AK-DOS,Doctor of Osteopathy,DOS,1,AK
+2,AK-DPM,Podiatrist,DPM,1,AK
+2,AK-DVM,Veterinarian,DVM,1,AK
+2,AK-MDR,Medical Doctor,MDR,1,AK
+2,AK-MWF,Midwife,MWF,1,AK
+2,AK-NPR,Nurse Practitioner,NPR,1,AK
+2,AK-ODR,Optometrist,ODR,1,AK
+2,AK-PAS,Physician Assistant,PAS,1,AK
+2,AK-RPH,Pharmacist,RPH,1,AK
+10,AL-APN,Certified Advanced Nurse Practitioner,APN,1,AL
+10,AL-CNA,Certified Registered Nurse Anesthetist,CNA,1,AL
+10,AL-CNM,Certified Nurse Midwife,CNM,1,AL
+10,AL-CNS,Certified Nurse Specialist,CNS,1,AL
+10,AL-DCH,Doctor of Chiropractics,DCH,1,AL
+10,AL-DEN,Dentist,DEN,1,AL
+10,AL-DOS,Doctor of Osteopathy,DOS,1,AL
+10,AL-DPM,Podiatrist,DPM,1,AL
+10,AL-DVM,Veterinarian,DVM,1,AL
+10,AL-MDR,Medical Doctor,MDR,1,AL
+10,AL-MWF,Midwife,MWF,1,AL
+10,AL-NPR,Nurse Practitioner,NPR,1,AL
+10,AL-ODR,Optometrist,ODR,1,AL
+10,AL-PAS,Physician Assistant,PAS,1,AL
+10,AL-RPH,Pharmacist,RPH,1,AL
+7,AR-APN,Certified Advanced Nurse Practitioner,APN,1,AR
+7,AR-CNA,Certified Registered Nurse Anesthetist,CNA,1,AR
+7,AR-CNM,Certified Nurse Midwife,CNM,1,AR
+7,AR-CNS,Certified Nurse Specialist,CNS,1,AR
+7,AR-DCH,Doctor of Chiropractics,DCH,1,AR
+7,AR-DEN,Dentist,DEN,1,AR
+7,AR-DOS,Doctor of Osteopathy,DOS,1,AR
+7,AR-DPM,Podiatrist,DPM,1,AR
+7,AR-DVM,Veterinarian,DVM,1,AR
+7,AR-MDR,Medical Doctor,MDR,1,AR
+7,AR-MWF,Midwife,MWF,1,AR
+7,AR-NPR,Nurse Practitioner,NPR,1,AR
+7,AR-ODR,Optometrist,ODR,1,AR
+7,AR-PAS,Physician Assistant,PAS,1,AR
+7,AR-RPH,Pharmacist,RPH,1,AR
+3,AZ-APN,Certified Advanced Nurse Practitioner,APN,1,AZ
+3,AZ-CNA,Certified Registered Nurse Anesthetist,CNA,1,AZ
+3,AZ-CNM,Certified Nurse Midwife,CNM,1,AZ
+3,AZ-CNS,Certified Nurse Specialist,CNS,1,AZ
+3,AZ-DCH,Doctor of Chiropractics,DCH,1,AZ
+3,AZ-DEN,Dentist,DEN,1,AZ
+3,AZ-DOS,Doctor of Osteopathy,DOS,1,AZ
+3,AZ-DPM,Podiatrist,DPM,1,AZ
+3,AZ-DVM,Veterinarian,DVM,1,AZ
+3,AZ-MDR,Medical Doctor,MDR,1,AZ
+3,AZ-MWF,Midwife,MWF,1,AZ
+3,AZ-NPR,Nurse Practitioner,NPR,1,AZ
+3,AZ-ODR,Optometrist,ODR,1,AZ
+3,AZ-PAS,Physician Assistant,PAS,1,AZ
+3,AZ-RPH,Pharmacist,RPH,1,AZ
+1,CA-APN,Certified Advanced Nurse Practitioner,APN,1,CA
+1,CA-CNA,Certified Registered Nurse Anesthetist,CNA,1,CA
+1,CA-CNM,Certified Nurse Midwife,CNM,1,CA
+1,CA-CNS,Certified Nurse Specialist,CNS,1,CA
+1,CA-DCH,Doctor of Chiropractics,DCH,1,CA
+1,CA-DEN,Dentist,DEN,1,CA
+1,CA-DOS,Doctor of Osteopathy,DOS,1,CA
+1,CA-DPM,Podiatrist,DPM,1,CA
+1,CA-DVM,Veterinarian,DVM,1,CA
+1,CA-MDR,Medical Doctor,MDR,1,CA
+1,CA-MWF,Midwife,MWF,1,CA
+1,CA-NPR,Nurse Practitioner,NPR,1,CA
+1,CA-ODR,Optometrist,ODR,1,CA
+1,CA-PAS,Physician Assistant,PAS,1,CA
+1,CA-RPH,Pharmacist,RPH,1,CA
+4,CO-APN,Certified Advanced Nurse Practitioner,APN,1,CO
+4,CO-CNA,Certified Registered Nurse Anesthetist,CNA,1,CO
+4,CO-CNM,Certified Nurse Midwife,CNM,1,CO
+4,CO-CNS,Certified Nurse Specialist,CNS,1,CO
+4,CO-DCH,Doctor of Chiropractics,DCH,1,CO
+4,CO-DEN,Dentist,DEN,1,CO
+4,CO-DOS,Doctor of Osteopathy,DOS,1,CO
+4,CO-DPM,Podiatrist,DPM,1,CO
+4,CO-DVM,Veterinarian,DVM,1,CO
+4,CO-MDR,Medical Doctor,MDR,1,CO
+4,CO-MDU,Doctor,MDU,1,CO
+4,CO-MWF,Midwife,MWF,1,CO
+4,CO-NPR,Nurse Practitioner,NPR,1,CO
+4,CO-ODR,Optometrist,ODR,1,CO
+4,CO-PAS,Physician Assistant,PAS,1,CO
+4,CO-RPH,Pharmacist,RPH,1,CO
+13,CT-APN,Certified Advanced Nurse Practitioner,APN,1,CT
+13,CT-CNA,Certified Registered Nurse Anesthetist,CNA,1,CT
+13,CT-CNM,Certified Nurse Midwife,CNM,1,CT
+13,CT-CNS,Certified Nurse Specialist,CNS,1,CT
+13,CT-DCH,Doctor of Chiropractics,DCH,1,CT
+13,CT-DEN,Dentist,DEN,1,CT
+13,CT-DOS,Doctor of Osteopathy,DOS,1,CT
+13,CT-DPM,Podiatrist,DPM,1,CT
+13,CT-DVM,Veterinarian,DVM,1,CT
+13,CT-MDR,Medical Doctor,MDR,1,CT
+13,CT-MWF,Midwife,MWF,1,CT
+13,CT-NPR,Nurse Practitioner,NPR,1,CT
+13,CT-ODR,Optometrist,ODR,1,CT
+13,CT-PAS,Physician Assistant,PAS,1,CT
+13,CT-RPH,Pharmacist,RPH,1,CT
+12,DC-APN,Certified Advanced Nurse Practitioner,APN,1,DC
+12,DC-CNA,Certified Registered Nurse Anesthetist,CNA,1,DC
+12,DC-CNM,Certified Nurse Midwife,CNM,1,DC
+12,DC-CNS,Certified Nurse Specialist,CNS,1,DC
+12,DC-DCH,Doctor of Chiropractics,DCH,1,DC
+12,DC-DEN,Dentist,DEN,1,DC
+12,DC-DOS,Doctor of Osteopathy,DOS,1,DC
+12,DC-DPM,Podiatrist,DPM,1,DC
+12,DC-DVM,Veterinarian,DVM,1,DC
+12,DC-MDR,Medical Doctor,MDR,1,DC
+12,DC-MWF,Midwife,MWF,1,DC
+12,DC-NPR,Nurse Practitioner,NPR,1,DC
+12,DC-ODR,Optometrist,ODR,1,DC
+12,DC-PAS,Physician Assistant,PAS,1,DC
+12,DC-RPH,Pharmacist,RPH,1,DC
+12,DE-APN,Certified Advanced Nurse Practitioner,APN,1,DE
+12,DE-CNA,Certified Registered Nurse Anesthetist,CNA,1,DE
+12,DE-CNM,Certified Nurse Midwife,CNM,1,DE
+12,DE-CNS,Certified Nurse Specialist,CNS,1,DE
+12,DE-DCH,Doctor of Chiropractics,DCH,1,DE
+12,DE-DEN,Dentist,DEN,1,DE
+12,DE-DOS,Doctor of Osteopathy,DOS,1,DE
+12,DE-DPM,Podiatrist,DPM,1,DE
+12,DE-DVM,Veterinarian,DVM,1,DE
+12,DE-MDR,Medical Doctor,MDR,1,DE
+12,DE-MWF,Midwife,MWF,1,DE
+12,DE-NPR,Nurse Practitioner,NPR,1,DE
+12,DE-ODR,Optometrist,ODR,1,DE
+12,DE-PAS,Physician Assistant,PAS,1,DE
+12,DE-RPH,Pharmacist,RPH,1,DE
+9,FL-APN,Certified Advanced Nurse Practitioner,APN,1,FL
+9,FL-CNA,Certified Registered Nurse Anesthetist,CNA,1,FL
+9,FL-CNM,Certified Nurse Midwife,CNM,1,FL
+9,FL-CNS,Certified Nurse Specialist,CNS,1,FL
+9,FL-DCH,Doctor of Chiropractics,DCH,1,FL
+9,FL-DEN,Dentist,DEN,1,FL
+9,FL-DOS,Doctor of Osteopathy,DOS,1,FL
+9,FL-DPM,Podiatrist,DPM,1,FL
+9,FL-DVM,Veterinarian,DVM,1,FL
+9,FL-MDR,Medical Doctor,MDR,1,FL
+9,FL-MWF,Midwife,MWF,1,FL
+9,FL-NPR,Nurse Practitioner,NPR,1,FL
+9,FL-ODR,Optometrist,ODR,1,FL
+9,FL-PAS,Physician Assistant,PAS,1,FL
+9,FL-RPH,Pharmacist,RPH,1,FL
+10,GA-APN,Certified Advanced Nurse Practitioner,APN,1,GA
+10,GA-CNA,Certified Registered Nurse Anesthetist,CNA,1,GA
+10,GA-CNM,Certified Nurse Midwife,CNM,1,GA
+10,GA-CNS,Certified Nurse Specialist,CNS,1,GA
+10,GA-DCH,Doctor of Chiropractics,DCH,1,GA
+10,GA-DEN,Dentist,DEN,1,GA
+10,GA-DOS,Doctor of Osteopathy,DOS,1,GA
+10,GA-DPM,Podiatrist,DPM,1,GA
+10,GA-DVM,Veterinarian,DVM,1,GA
+10,GA-MDR,Medical Doctor,MDR,1,GA
+10,GA-MWF,Midwife,MWF,1,GA
+10,GA-NPR,Nurse Practitioner,NPR,1,GA
+10,GA-ODR,Optometrist,ODR,1,GA
+10,GA-PAS,Physician Assistant,PAS,1,GA
+10,GA-RPH,Pharmacist,RPH,1,GA
+1,HI-APN,Certified Advanced Nurse Practitioner,APN,1,HI
+1,HI-CNA,Certified Registered Nurse Anesthetist,CNA,1,HI
+1,HI-CNM,Certified Nurse Midwife,CNM,1,HI
+1,HI-CNS,Certified Nurse Specialist,CNS,1,HI
+1,HI-DCH,Doctor of Chiropractics,DCH,1,HI
+1,HI-DEN,Dentist,DEN,1,HI
+1,HI-DOS,Doctor of Osteopathy,DOS,1,HI
+1,HI-DPM,Podiatrist,DPM,1,HI
+1,HI-DVM,Veterinarian,DVM,1,HI
+1,HI-MDR,Medical Doctor,MDR,1,HI
+1,HI-MWF,Midwife,MWF,1,HI
+1,HI-NPR,Nurse Practitioner,NPR,1,HI
+1,HI-ODR,Optometrist,ODR,1,HI
+1,HI-PAS,Physician Assistant,PAS,1,HI
+1,HI-RPH,Pharmacist,RPH,1,HI
+5,IA-APN,Certified Advanced Nurse Practitioner,APN,1,IA
+5,IA-CNA,Certified Registered Nurse Anesthetist,CNA,1,IA
+5,IA-CNM,Certified Nurse Midwife,CNM,1,IA
+5,IA-CNS,Certified Nurse Specialist,CNS,1,IA
+5,IA-DCH,Doctor of Chiropractics,DCH,1,IA
+5,IA-DEN,Dentist,DEN,1,IA
+5,IA-DOS,Doctor of Osteopathy,DOS,1,IA
+5,IA-DPM,Podiatrist,DPM,1,IA
+5,IA-DVM,Veterinarian,DVM,1,IA
+5,IA-MDR,Medical Doctor,MDR,1,IA
+5,IA-MWF,Midwife,MWF,1,IA
+5,IA-NPR,Nurse Practitioner,NPR,1,IA
+5,IA-ODR,Optometrist,ODR,1,IA
+5,IA-PAS,Physician Assistant,PAS,1,IA
+5,IA-RPH,Pharmacist,RPH,1,IA
+2,ID-APN,Certified Advanced Nurse Practitioner,APN,1,ID
+2,ID-CNA,Certified Registered Nurse Anesthetist,CNA,1,ID
+2,ID-CNM,Certified Nurse Midwife,CNM,1,ID
+2,ID-CNS,Certified Nurse Specialist,CNS,1,ID
+2,ID-DCH,Doctor of Chiropractics,DCH,1,ID
+2,ID-DEN,Dentist,DEN,1,ID
+2,ID-DOS,Doctor of Osteopathy,DOS,1,ID
+2,ID-DPM,Podiatrist,DPM,1,ID
+2,ID-DVM,Veterinarian,DVM,1,ID
+2,ID-MDR,Medical Doctor,MDR,1,ID
+2,ID-MWF,Midwife,MWF,1,ID
+2,ID-NPR,Nurse Practitioner,NPR,1,ID
+2,ID-ODR,Optometrist,ODR,1,ID
+2,ID-PAS,Physician Assistant,PAS,1,ID
+2,ID-RPH,Pharmacist,RPH,1,ID
+6,IL-APN,Certified Advanced Nurse Practitioner,APN,1,IL
+6,IL-CNA,Certified Registered Nurse Anesthetist,CNA,1,IL
+6,IL-CNM,Certified Nurse Midwife,CNM,1,IL
+6,IL-CNS,Certified Nurse Specialist,CNS,1,IL
+6,IL-DCH,Doctor of Chiropractics,DCH,1,IL
+6,IL-DEN,Dentist,DEN,1,IL
+6,IL-DOS,Doctor of Osteopathy,DOS,1,IL
+6,IL-DPM,Podiatrist,DPM,1,IL
+6,IL-DVM,Veterinarian,DVM,1,IL
+6,IL-MDR,Medical Doctor,MDR,1,IL
+6,IL-MWF,Midwife,MWF,1,IL
+6,IL-NPR,Nurse Practitioner,NPR,1,IL
+6,IL-ODR,Optometrist,ODR,1,IL
+6,IL-PAS,Physician Assistant,PAS,1,IL
+6,IL-RPH,Pharmacist,RPH,1,IL
+8,IN-APN,Certified Advanced Nurse Practitioner,APN,1,IN
+8,IN-CNA,Certified Registered Nurse Anesthetist,CNA,1,IN
+8,IN-CNM,Certified Nurse Midwife,CNM,1,IN
+8,IN-CNS,Certified Nurse Specialist,CNS,1,IN
+8,IN-DCH,Doctor of Chiropractics,DCH,1,IN
+8,IN-DEN,Dentist,DEN,1,IN
+8,IN-DOS,Doctor of Osteopathy,DOS,1,IN
+8,IN-DPM,Podiatrist,DPM,1,IN
+8,IN-DVM,Veterinarian,DVM,1,IN
+8,IN-MDR,Medical Doctor,MDR,1,IN
+8,IN-MWF,Midwife,MWF,1,IN
+8,IN-NPR,Nurse Practitioner,NPR,1,IN
+8,IN-ODR,Optometrist,ODR,1,IN
+8,IN-PAS,Physician Assistant,PAS,1,IN
+8,IN-RPH,Pharmacist,RPH,1,IN
+5,KS-APN,Certified Advanced Nurse Practitioner,APN,1,KS
+5,KS-CNA,Certified Registered Nurse Anesthetist,CNA,1,KS
+5,KS-CNM,Certified Nurse Midwife,CNM,1,KS
+5,KS-CNS,Certified Nurse Specialist,CNS,1,KS
+5,KS-DCH,Doctor of Chiropractics,DCH,1,KS
+5,KS-DEN,Dentist,DEN,1,KS
+5,KS-DOS,Doctor of Osteopathy,DOS,1,KS
+5,KS-DPM,Podiatrist,DPM,1,KS
+5,KS-DVM,Veterinarian,DVM,1,KS
+5,KS-MDR,Medical Doctor,MDR,1,KS
+5,KS-MWF,Midwife,MWF,1,KS
+5,KS-NPR,Nurse Practitioner,NPR,1,KS
+5,KS-ODR,Optometrist,ODR,1,KS
+5,KS-PAS,Physician Assistant,PAS,1,KS
+5,KS-RPH,Pharmacist,RPH,1,KS
+15,KY-APN,Certified Advanced Nurse Practitioner,APN,1,KY
+15,KY-CNA,Certified Registered Nurse Anesthetist,CNA,1,KY
+15,KY-CNM,Certified Nurse Midwife,CNM,1,KY
+15,KY-CNS,Certified Nurse Specialist,CNS,1,KY
+15,KY-DCH,Doctor of Chiropractics,DCH,1,KY
+15,KY-DEN,Dentist,DEN,1,KY
+15,KY-DOS,Doctor of Osteopathy,DOS,1,KY
+15,KY-DPM,Podiatrist,DPM,1,KY
+15,KY-DVM,Veterinarian,DVM,1,KY
+15,KY-MDR,Medical Doctor,MDR,1,KY
+15,KY-MWF,Midwife,MWF,1,KY
+15,KY-NPR,Nurse Practitioner,NPR,1,KY
+15,KY-ODR,Optometrist,ODR,1,KY
+15,KY-PAS,Physician Assistant,PAS,1,KY
+15,KY-RPH,Pharmacist,RPH,1,KY
+7,LA-APN,Certified Advanced Nurse Practitioner,APN,1,LA
+7,LA-CNA,Certified Registered Nurse Anesthetist,CNA,1,LA
+7,LA-CNM,Certified Nurse Midwife,CNM,1,LA
+7,LA-CNS,Certified Nurse Specialist,CNS,1,LA
+7,LA-DCH,Doctor of Chiropractics,DCH,1,LA
+7,LA-DEN,Dentist,DEN,1,LA
+7,LA-DOS,Doctor of Osteopathy,DOS,1,LA
+7,LA-DPM,Podiatrist,DPM,1,LA
+7,LA-DVM,Veterinarian,DVM,1,LA
+7,LA-MDR,Medical Doctor,MDR,1,LA
+7,LA-MWF,Midwife,MWF,1,LA
+7,LA-NPR,Nurse Practitioner,NPR,1,LA
+7,LA-ODR,Optometrist,ODR,1,LA
+7,LA-PAS,Physician Assistant,PAS,1,LA
+7,LA-RPH,Pharmacist,RPH,1,LA
+14,MA-APN,Certified Advanced Nurse Practitioner,APN,1,MA
+14,MA-CNA,Certified Registered Nurse Anesthetist,CNA,1,MA
+14,MA-CNM,Certified Nurse Midwife,CNM,1,MA
+14,MA-CNS,Certified Nurse Specialist,CNS,1,MA
+14,MA-DCH,Chiropractor,DCH,1,MA
+14,MA-DEN,Dentist,DEN,1,MA
+14,MA-DOS,Doctor of Osteopathy,DOS,1,MA
+14,MA-DPM,Podiatrist,DPM,1,MA
+14,MA-DVM,Veterinarian,DVM,1,MA
+14,MA-MDR,Medical Doctor,MDR,1,MA
+14,MA-MWF,Midwife,MWF,1,MA
+14,MA-NPR,Nurse Practitioner,NPR,1,MA
+14,MA-ODR,Optometrist,ODR,1,MA
+14,MA-PAS,Physician Assistant,PAS,1,MA
+14,MA-RPH,Pharmacist,RPH,1,MA
+12,MD-APN,Certified Advanced Nurse Practitioner,APN,1,MD
+12,MD-CNA,Certified Registered Nurse Anesthetist,CNA,1,MD
+12,MD-CNM,Certified Nurse Midwife,CNM,1,MD
+12,MD-CNS,Certified Nurse Specialist,CNS,1,MD
+12,MD-DCH,Doctor of Chiropractics,DCH,1,MD
+12,MD-DEN,Dentist,DEN,1,MD
+12,MD-DOS,Doctor of Osteopathy,DOS,1,MD
+12,MD-DPM,Podiatrist,DPM,1,MD
+12,MD-DVM,Veterinarian,DVM,1,MD
+12,MD-MDR,Medical Doctor,MDR,1,MD
+12,MD-MWF,Midwife,MWF,1,MD
+12,MD-NPR,Nurse Practitioner,NPR,1,MD
+12,MD-ODR,Optometrist,ODR,1,MD
+12,MD-PAS,Physician Assistant,PAS,1,MD
+12,MD-RPH,Pharmacist,RPH,1,MD
+14,ME-APN,Certified Advanced Nurse Practitioner,APN,1,ME
+14,ME-CNA,Certified Registered Nurse Anesthetist,CNA,1,ME
+14,ME-CNM,Certified Nurse Midwife,CNM,1,ME
+14,ME-CNS,Certified Nurse Specialist,CNS,1,ME
+14,ME-DCH,Doctor of Chiropractics,DCH,1,ME
+14,ME-DEN,Dentist,DEN,1,ME
+14,ME-DOS,Doctor of Osteopathy,DOS,1,ME
+14,ME-DPM,Podiatrist,DPM,1,ME
+14,ME-DVM,Veterinarian,DVM,1,ME
+14,ME-MDR,Medical Doctor,MDR,1,ME
+14,ME-MWF,Midwife,MWF,1,ME
+14,ME-NPR,Nurse Practitioner,NPR,1,ME
+14,ME-ODR,Optometrist,ODR,1,ME
+14,ME-PAS,Physician Assistant,PAS,1,ME
+14,ME-RPH,Pharmacist,RPH,1,ME
+8,MI-APN,Certified Advanced Nurse Practitioner,APN,1,MI
+8,MI-CNA,Certified Registered Nurse Anesthetist,CNA,1,MI
+8,MI-CNM,Certified Nurse Midwife,CNM,1,MI
+8,MI-CNS,Certified Nurse Specialist,CNS,1,MI
+8,MI-DCH,Doctor of Chiropractics,DCH,1,MI
+8,MI-DEN,Dentist,DEN,1,MI
+8,MI-DOS,Doctor of Osteopathy,DOS,1,MI
+8,MI-DPM,Podiatrist,DPM,1,MI
+8,MI-DVM,Veterinarian,DVM,1,MI
+8,MI-MDR,Medical Doctor,MDR,1,MI
+8,MI-MWF,Midwife,MWF,1,MI
+8,MI-NPR,Nurse Practitioner,NPR,1,MI
+8,MI-ODR,Optometrist,ODR,1,MI
+8,MI-PAS,Physician Assistant,PAS,1,MI
+8,MI-RPH,Pharmacist,RPH,1,MI
+6,MN-APN,Certified Advanced Nurse Practitioner,APN,1,MN
+6,MN-CNA,Certified Registered Nurse Anesthetist,CNA,1,MN
+6,MN-CNM,Certified Nurse Midwife,CNM,1,MN
+6,MN-CNS,Certified Nurse Specialist,CNS,1,MN
+6,MN-DCH,Doctor of Chiropractics,DCH,1,MN
+6,MN-DEN,Dentist,DEN,1,MN
+6,MN-DOS,Doctor of Osteopathy,DOS,1,MN
+6,MN-DPM,Podiatrist,DPM,1,MN
+6,MN-DVM,Veterinarian,DVM,1,MN
+6,MN-MDR,Medical Doctor,MDR,1,MN
+6,MN-MWF,Midwife,MWF,1,MN
+6,MN-NPR,Nurse Practitioner,NPR,1,MN
+6,MN-ODR,Optometrist,ODR,1,MN
+6,MN-PAS,Physician Assistant,PAS,1,MN
+6,MN-RPH,Pharmacist,RPH,1,MN
+5,MO-APN,Certified Advanced Nurse Practitioner,APN,1,MO
+5,MO-CNA,Certified Registered Nurse Anesthetist,CNA,1,MO
+5,MO-CNM,Certified Nurse Midwife,CNM,1,MO
+5,MO-CNS,Certified Nurse Specialist,CNS,1,MO
+5,MO-DCH,Doctor of Chiropractics,DCH,1,MO
+5,MO-DEN,Dentist,DEN,1,MO
+5,MO-DOS,Doctor of Osteopathy,DOS,1,MO
+5,MO-DPM,Podiatrist,DPM,1,MO
+5,MO-DVM,Veterinarian,DVM,1,MO
+5,MO-MDR,Medical Doctor,MDR,1,MO
+5,MO-MWF,Midwife,MWF,1,MO
+5,MO-NPR,Nurse Practitioner,NPR,1,MO
+5,MO-ODR,Optometrist,ODR,1,MO
+5,MO-PAS,Physician Assistant,PAS,1,MO
+5,MO-RPH,Pharmacist,RPH,1,MO
+7,MS-APN,Certified Advanced Nurse Practitioner,APN,1,MS
+7,MS-CNA,Certified Registered Nurse Anesthetist,CNA,1,MS
+7,MS-CNM,Certified Nurse Midwife,CNM,1,MS
+7,MS-CNS,Certified Nurse Specialist,CNS,1,MS
+7,MS-DCH,Doctor of Chiropractics,DCH,1,MS
+7,MS-DEN,Dentist,DEN,1,MS
+7,MS-DOS,Doctor of Osteopathy,DOS,1,MS
+7,MS-DPM,Podiatrist,DPM,1,MS
+7,MS-DVM,Veterinarian,DVM,1,MS
+7,MS-MDR,Medical Doctor,MDR,1,MS
+7,MS-MWF,Midwife,MWF,1,MS
+7,MS-NPR,Nurse Practitioner,NPR,1,MS
+7,MS-ODR,Optometrist,ODR,1,MS
+7,MS-PAS,Physician Assistant,PAS,1,MS
+7,MS-RPH,Pharmacist,RPH,1,MS
+3,MT-APN,Certified Advanced Nurse Practitioner,APN,1,MT
+3,MT-CNA,Certified Registered Nurse Anesthetist,CNA,1,MT
+3,MT-CNM,Certified Nurse Midwife,CNM,1,MT
+3,MT-CNS,Certified Nurse Specialist,CNS,1,MT
+3,MT-DCH,Doctor of Chiropractics,DCH,1,MT
+3,MT-DEN,Dentist,DEN,1,MT
+3,MT-DOS,Doctor of Osteopathy,DOS,1,MT
+3,MT-DPM,Podiatrist,DPM,1,MT
+3,MT-DVM,Veterinarian,DVM,1,MT
+3,MT-MDR,Medical Doctor,MDR,1,MT
+3,MT-MWF,Midwife,MWF,1,MT
+3,MT-NPR,Nurse Practitioner,NPR,1,MT
+3,MT-ODR,Optometrist,ODR,1,MT
+3,MT-PAS,Physician Assistant,PAS,1,MT
+3,MT-RPH,Pharmacist,RPH,1,MT
+11,NC-APN,Certified Advanced Nurse Practitioner,APN,1,NC
+11,NC-CNA,Certified Registered Nurse Anesthetist,CNA,1,NC
+11,NC-CNM,Certified Nurse Midwife,CNM,1,NC
+11,NC-CNS,Certified Nurse Specialist,CNS,1,NC
+11,NC-DCH,Doctor of Chiropractics,DCH,1,NC
+11,NC-DEN,Dentist,DEN,1,NC
+11,NC-DOS,Doctor of Osteopathy,DOS,1,NC
+11,NC-DPM,Podiatrist,DPM,1,NC
+11,NC-DVM,Veterinarian,DVM,1,NC
+11,NC-MDR,Medical Doctor,MDR,1,NC
+11,NC-MWF,Midwife,MWF,1,NC
+11,NC-NPR,Nurse Practitioner,NPR,1,NC
+11,NC-ODR,Optometrist,ODR,1,NC
+11,NC-PAS,Physician Assistant,PAS,1,NC
+11,NC-RPH,Pharmacist,RPH,1,NC
+3,ND-APN,Certified Advanced Nurse Practitioner,APN,1,ND
+3,ND-CNA,Certified Registered Nurse Anesthetist,CNA,1,ND
+3,ND-CNM,Certified Nurse Midwife,CNM,1,ND
+3,ND-CNS,Certified Nurse Specialist,CNS,1,ND
+3,ND-DCH,Doctor of Chiropractics,DCH,1,ND
+3,ND-DEN,Dentist,DEN,1,ND
+3,ND-DOS,Doctor of Osteopathy,DOS,1,ND
+3,ND-DPM,Podiatrist,DPM,1,ND
+3,ND-DVM,Veterinarian,DVM,1,ND
+3,ND-MDR,Medical Doctor,MDR,1,ND
+3,ND-MWF,Midwife,MWF,1,ND
+3,ND-NPR,Nurse Practitioner,NPR,1,ND
+3,ND-ODR,Optometrist,ODR,1,ND
+3,ND-PAS,Physician Assistant,PAS,1,ND
+3,ND-RPH,Pharmacist,RPH,1,ND
+5,NE-APN,Certified Advanced Nurse Practitioner,APN,1,NE
+5,NE-CNA,Certified Registered Nurse Anesthetist,CNA,1,NE
+5,NE-CNM,Certified Nurse Midwife,CNM,1,NE
+5,NE-CNS,Certified Nurse Specialist,CNS,1,NE
+5,NE-DCH,Doctor of Chiropractics,DCH,1,NE
+5,NE-DEN,Dentist,DEN,1,NE
+5,NE-DOS,Doctor of Osteopathy,DOS,1,NE
+5,NE-DPM,Podiatrist,DPM,1,NE
+5,NE-DVM,Veterinarian,DVM,1,NE
+5,NE-MDR,Medical Doctor,MDR,1,NE
+5,NE-MWF,Midwife,MWF,1,NE
+5,NE-NPR,Nurse Practitioner,NPR,1,NE
+5,NE-ODR,Optometrist,ODR,1,NE
+5,NE-PAS,Physician Assistant,PAS,1,NE
+5,NE-RPH,Pharmacist,RPH,1,NE
+14,NH-APN,Certified Advanced Nurse Practitioner,APN,1,NH
+14,NH-CNA,Certified Registered Nurse Anesthetist,CNA,1,NH
+14,NH-CNM,Certified Nurse Midwife,CNM,1,NH
+14,NH-CNS,Certified Nurse Specialist,CNS,1,NH
+14,NH-DCH,Doctor of Chiropractics,DCH,1,NH
+14,NH-DEN,Dentist,DEN,1,NH
+14,NH-DOS,Doctor of Osteopathy,DOS,1,NH
+14,NH-DPM,Podiatrist,DPM,1,NH
+14,NH-DVM,Veterinarian,DVM,1,NH
+14,NH-MDR,Medical Doctor,MDR,1,NH
+14,NH-MWF,Midwife,MWF,1,NH
+14,NH-NPR,Nurse Practitioner,NPR,1,NH
+14,NH-ODR,Optometrist,ODR,1,NH
+14,NH-PAS,Physician Assistant,PAS,1,NH
+14,NH-RPH,Pharmacist,RPH,1,NH
+12,NJ-APN,Certified Advanced Nurse Practitioner,APN,1,NJ
+12,NJ-CNA,Certified Registered Nurse Anesthetist,CNA,1,NJ
+12,NJ-CNM,Certified Nurse Midwife,CNM,1,NJ
+12,NJ-CNS,Certified Nurse Specialist,CNS,1,NJ
+12,NJ-DCH,Doctor of Chiropractics,DCH,1,NJ
+12,NJ-DEN,Dentist,DEN,1,NJ
+12,NJ-DOS,Doctor of Osteopathy,DOS,1,NJ
+12,NJ-DPM,Podiatrist,DPM,1,NJ
+12,NJ-DVM,Veterinarian,DVM,1,NJ
+12,NJ-MDR,Medical Doctor,MDR,1,NJ
+12,NJ-MWF,Midwife,MWF,1,NJ
+12,NJ-NPR,Nurse Practitioner,NPR,1,NJ
+12,NJ-ODR,Optometrist,ODR,1,NJ
+12,NJ-PAS,Physician Assistant,PAS,1,NJ
+12,NJ-RPH,Pharmacist,RPH,1,NJ
+14,NM-APN,Certified Advanced Nurse Practitioner,APN,1,NM
+14,NM-CNA,Certified Registered Nurse Anesthetist,CNA,1,NM
+14,NM-CNM,Certified Nurse Midwife,CNM,1,NM
+14,NM-CNS,Certified Nurse Specialist,CNS,1,NM
+14,NM-DCH,Doctor of Chiropractics,DCH,1,NM
+14,NM-DEN,Dentist,DEN,1,NM
+14,NM-DOS,Doctor of Osteopathy,DOS,1,NM
+14,NM-DPM,Podiatrist,DPM,1,NM
+14,NM-DVM,Veterinarian,DVM,1,NM
+14,NM-MDR,Medical Doctor,MDR,1,NM
+14,NM-MWF,Midwife,MWF,1,NM
+14,NM-NPR,Nurse Practitioner,NPR,1,NM
+14,NM-ODR,Optometrist,ODR,1,NM
+14,NM-PAS,Physician Assistant,PAS,1,NM
+14,NM-RPH,Pharmacist,RPH,1,NM
+1,NV-APN,Certified Advanced Nurse Practitioner,APN,1,NV
+1,NV-CNA,Certified Registered Nurse Anesthetist,CNA,1,NV
+1,NV-CNM,Certified Nurse Midwife,CNM,1,NV
+1,NV-CNS,Certified Nurse Specialist,CNS,1,NV
+1,NV-DCH,Doctor of Chiropractics,DCH,1,NV
+1,NV-DEN,Dentist,DEN,1,NV
+1,NV-DOS,Doctor of Osteopathy,DOS,1,NV
+1,NV-DPM,Podiatrist,DPM,1,NV
+1,NV-DVM,Veterinarian,DVM,1,NV
+1,NV-MDR,Medical Doctor,MDR,1,NV
+1,NV-MWF,Midwife,MWF,1,NV
+1,NV-NPR,Nurse Practitioner,NPR,1,NV
+1,NV-ODR,Optometrist,ODR,1,NV
+1,NV-PAS,Physician Assistant,PAS,1,NV
+1,NV-RPH,Pharmacist,RPH,1,NV
+13,NY-APN,Certified Advanced Nurse Practitioner,APN,1,NY
+13,NY-CNA,Certified Registered Nurse Anesthetist,CNA,1,NY
+13,NY-CNM,Certified Nurse Midwife,CNM,1,NY
+13,NY-CNS,Certified Nurse Specialist,CNS,1,NY
+13,NY-DCH,Doctor of Chiropractics,DCH,1,NY
+13,NY-DEN,Dentist,DEN,1,NY
+13,NY-DPM,Podiatrist,DPM,1,NY
+13,NY-DVM,Veterinarian,DVM,1,NY
+13,NY-MDU,Doctor,MDU,1,NY
+13,NY-MWF,Midwife,MWF,1,NY
+13,NY-NPR,Nurse Practitioner,NPR,1,NY
+13,NY-ODR,Optometrist,ODR,1,NY
+13,NY-PAS,Physician Assistant,PAS,1,NY
+13,NY-RPH,Pharmacist,RPH,1,NY
+15,OH-APN,Certified Advanced Nurse Practitioner,APN,1,OH
+15,OH-CNA,Certified Registered Nurse Anesthetist,CNA,1,OH
+15,OH-CNM,Certified Nurse Midwife,CNM,1,OH
+15,OH-CNS,Certified Nurse Specialist,CNS,1,OH
+15,OH-DCH,Doctor of Chiropractics,DCH,1,OH
+15,OH-DEN,Dentist,DEN,1,OH
+15,OH-DOS,Doctor of Osteopathy,DOS,1,OH
+15,OH-DPM,Podiatrist,DPM,1,OH
+15,OH-DVM,Veterinarian,DVM,1,OH
+15,OH-MDR,Medical Doctor,MDR,1,OH
+15,OH-MWF,Midwife,MWF,1,OH
+15,OH-NPR,Nurse Practitioner,NPR,1,OH
+15,OH-ODR,Optometrist,ODR,1,OH
+15,OH-PAS,Physician Assistant,PAS,1,OH
+15,OH-RPH,Pharmacist,RPH,1,OH
+4,OK-APN,Certified Advanced Nurse Practitioner,APN,1,OK
+4,OK-CNA,Certified Registered Nurse Anesthetist,CNA,1,OK
+4,OK-CNM,Certified Nurse Midwife,CNM,1,OK
+4,OK-CNS,Certified Nurse Specialist,CNS,1,OK
+4,OK-DCH,Doctor of Chiropractics,DCH,1,OK
+4,OK-DEN,Dentist,DEN,1,OK
+4,OK-DOS,Doctor of Osteopathy,DOS,1,OK
+4,OK-DPM,Podiatrist,DPM,1,OK
+4,OK-DVM,Veterinarian,DVM,1,OK
+4,OK-MDR,Medical Doctor,MDR,1,OK
+4,OK-MWF,Midwife,MWF,1,OK
+4,OK-NPR,Nurse Practitioner,NPR,1,OK
+4,OK-ODR,Optometrist,ODR,1,OK
+4,OK-PAS,Physician Assistant,PAS,1,OK
+4,OK-RPH,Pharmacist,RPH,1,OK
+2,OR-APN,Certified Advanced Nurse Practitioner,APN,1,OR
+2,OR-CNA,Certified Registered Nurse Anesthetist,CNA,1,OR
+2,OR-CNM,Certified Nurse Midwife,CNM,1,OR
+2,OR-CNS,Certified Nurse Specialist,CNS,1,OR
+2,OR-DCH,Doctor of Chiropractics,DCH,1,OR
+2,OR-DEN,Dentist,DEN,1,OR
+2,OR-DOS,Doctor of Osteopathy,DOS,1,OR
+2,OR-DPM,Podiatrist,DPM,1,OR
+2,OR-DVM,Veterinarian,DVM,1,OR
+2,OR-MDR,Medical Doctor,MDR,1,OR
+2,OR-MWF,Midwife,MWF,1,OR
+2,OR-NPR,Nurse Practitioner,NPR,1,OR
+2,OR-ODR,Optometrist,ODR,1,OR
+2,OR-PAS,Physician Assistant,PAS,1,OR
+2,OR-RPH,Pharmacist,RPH,1,OR
+12,PA-APN,Certified Advanced Nurse Practitioner,APN,1,PA
+12,PA-CNA,Certified Registered Nurse Anesthetist,CNA,1,PA
+12,PA-CNM,Certified Nurse Midwife,CNM,1,PA
+12,PA-CNS,Certified Nurse Specialist,CNS,1,PA
+12,PA-DCH,Doctor of Chiropractics,DCH,1,PA
+12,PA-DEN,Dentist,DEN,1,PA
+12,PA-DOS,Doctor of Osteopathy,DOS,1,PA
+12,PA-DPM,Podiatrist,DPM,1,PA
+12,PA-DVM,Veterinarian,DVM,1,PA
+12,PA-MDR,Medical Doctor,MDR,1,PA
+12,PA-MWF,Midwife,MWF,1,PA
+12,PA-NPR,Nurse Practitioner,NPR,1,PA
+12,PA-ODR,Optometrist,ODR,1,PA
+12,PA-PAS,Physician Assistant,PAS,1,PA
+12,PA-RPH,Pharmacist,RPH,1,PA
+9,PR-APN,Certified Advanced Nurse Practitioner,APN,1,PR
+9,PR-CNA,Certified Registered Nurse Anesthetist,CNA,1,PR
+9,PR-CNM,Certified Nurse Midwife,CNM,1,PR
+9,PR-CNS,Certified Nurse Specialist,CNS,1,PR
+9,PR-DCH,Doctor of Chiropractics,DCH,1,PR
+9,PR-DEN,Dentist,DEN,1,PR
+9,PR-DPM,Podiatrist,DPM,1,PR
+9,PR-DVM,Veterinarian,DVM,1,PR
+9,PR-MDU,Doctor,MDU,1,PR
+9,PR-MWF,Midwife,MWF,1,PR
+9,PR-NPR,Nurse Practitioner,NPR,1,PR
+9,PR-ODR,Optometrist,ODR,1,PR
+9,PR-PAS,Physician Assistant,PAS,1,PR
+9,PR-RPH,Pharmacist,RPH,1,PR
+14,RI-APN,Certified Advanced Nurse Practitioner,APN,1,RI
+14,RI-CNA,Certified Registered Nurse Anesthetist,CNA,1,RI
+14,RI-CNM,Certified Nurse Midwife,CNM,1,RI
+14,RI-CNS,Certified Nurse Specialist,CNS,1,RI
+14,RI-DCH,Doctor of Chiropractics,DCH,1,RI
+14,RI-DEN,Dentist,DEN,1,RI
+14,RI-DOS,Doctor of Osteopathy,DOS,1,RI
+14,RI-DPM,Podiatrist,DPM,1,RI
+14,RI-DVM,Veterinarian,DVM,1,RI
+14,RI-MDR,Medical Doctor,MDR,1,RI
+14,RI-MWF,Midwife,MWF,1,RI
+14,RI-NPR,Nurse Practitioner,NPR,1,RI
+14,RI-ODR,Optometrist,ODR,1,RI
+14,RI-PAS,Physician Assistant,PAS,1,RI
+14,RI-RPH,Pharmacist,RPH,1,RI
+11,SC-APN,Certified Advanced Nurse Practitioner,APN,1,SC
+11,SC-CNA,Certified Registered Nurse Anesthetist,CNA,1,SC
+11,SC-CNM,Certified Nurse Midwife,CNM,1,SC
+11,SC-CNS,Certified Nurse Specialist,CNS,1,SC
+11,SC-DCH,Doctor of Chiropractics,DCH,1,SC
+11,SC-DEN,Dentist,DEN,1,SC
+11,SC-DOS,Doctor of Osteopathy,DOS,1,SC
+11,SC-DPM,Podiatrist,DPM,1,SC
+11,SC-DVM,Veterinarian,DVM,1,SC
+11,SC-MDR,Medical Doctor,MDR,1,SC
+11,SC-MWF,Midwife,MWF,1,SC
+11,SC-NPR,Nurse Practitioner,NPR,1,SC
+11,SC-ODR,Optometrist,ODR,1,SC
+11,SC-PAS,Physician Assistant,PAS,1,SC
+11,SC-RPH,Pharmacist,RPH,1,SC
+3,SD-APN,Certified Advanced Nurse Practitioner,APN,1,SD
+3,SD-CNA,Certified Registered Nurse Anesthetist,CNA,1,SD
+3,SD-CNM,Certified Nurse Midwife,CNM,1,SD
+3,SD-CNS,Certified Nurse Specialist,CNS,1,SD
+3,SD-DCH,Doctor of Chiropractics,DCH,1,SD
+3,SD-DEN,Dentist,DEN,1,SD
+3,SD-DOS,Doctor of Osteopathy,DOS,1,SD
+3,SD-DPM,Podiatrist,DPM,1,SD
+3,SD-DVM,Veterinarian,DVM,1,SD
+3,SD-MDR,Medical Doctor,MDR,1,SD
+3,SD-MWF,Midwife,MWF,1,SD
+3,SD-NPR,Nurse Practitioner,NPR,1,SD
+3,SD-ODR,Optometrist,ODR,1,SD
+3,SD-PAS,Physician Assistant,PAS,1,SD
+3,SD-RPH,Pharmacist,RPH,1,SD
+10,TN-APN,Certified Advanced Nurse Practitioner,APN,1,TN
+10,TN-CNA,Certified Registered Nurse Anesthetist,CNA,1,TN
+10,TN-CNM,Certified Nurse Midwife,CNM,1,TN
+10,TN-CNS,Certified Nurse Specialist,CNS,1,TN
+10,TN-DCH,Doctor of Chiropractics,DCH,1,TN
+10,TN-DEN,Dentist,DEN,1,TN
+10,TN-DOS,Doctor of Osteopathy,DOS,1,TN
+10,TN-DPM,Podiatrist,DPM,1,TN
+10,TN-DVM,Veterinarian,DVM,1,TN
+10,TN-MDR,Medical Doctor,MDR,1,TN
+10,TN-MWF,Midwife,MWF,1,TN
+10,TN-NPR,Nurse Practitioner,NPR,1,TN
+10,TN-ODR,Optometrist,ODR,1,TN
+10,TN-PAS,Physician Assistant,PAS,1,TN
+10,TN-RPH,Pharmacist,RPH,1,TN
+4,TX-APN,Certified Advanced Nurse Practitioner,APN,1,TX
+4,TX-CNA,Certified Registered Nurse Anesthetist,CNA,1,TX
+4,TX-CNM,Certified Nurse Midwife,CNM,1,TX
+4,TX-CNS,Certified Nurse Specialist,CNS,1,TX
+4,TX-DCH,Doctor of Chiropractics,DCH,1,TX
+4,TX-DEN,Dentist,DEN,1,TX
+4,TX-DOS,Doctor of Osteopathy,DOS,1,TX
+4,TX-DPM,Podiatrist,DPM,1,TX
+4,TX-DVM,Veterinarian,DVM,1,TX
+4,TX-MDR,Medical Doctor,MDR,1,TX
+4,TX-MWF,Midwife,MWF,1,TX
+4,TX-NPR,Nurse Practitioner,NPR,1,TX
+4,TX-ODR,Optometrist,ODR,1,TX
+4,TX-PAS,Physician Assistant,PAS,1,TX
+4,TX-RPH,Pharmacist,RPH,1,TX
+3,UT-APN,Certified Advanced Nurse Practitioner,APN,1,UT
+3,UT-CNA,Certified Registered Nurse Anesthetist,CNA,1,UT
+3,UT-CNM,Certified Nurse Midwife,CNM,1,UT
+3,UT-CNS,Certified Nurse Specialist,CNS,1,UT
+3,UT-DCH,Doctor of Chiropractics,DCH,1,UT
+3,UT-DEN,Dentist,DEN,1,UT
+3,UT-DOS,Doctor of Osteopathy,DOS,1,UT
+3,UT-DPM,Podiatrist,DPM,1,UT
+3,UT-DVM,Veterinarian,DVM,1,UT
+3,UT-MDR,Medical Doctor,MDR,1,UT
+3,UT-MWF,Midwife,MWF,1,UT
+3,UT-NPR,Nurse Practitioner,NPR,1,UT
+3,UT-ODR,Optometrist,ODR,1,UT
+3,UT-PAS,Physician Assistant,PAS,1,UT
+3,UT-RPH,Pharmacist,RPH,1,UT
+11,VA-APN,Certified Advanced Nurse Practitioner,APN,1,VA
+11,VA-CNA,Certified Registered Nurse Anesthetist,CNA,1,VA
+11,VA-CNM,Certified Nurse Midwife,CNM,1,VA
+11,VA-CNS,Certified Nurse Specialist,CNS,1,VA
+11,VA-DCH,Doctor of Chiropractics,DCH,1,VA
+11,VA-DEN,Dentist,DEN,1,VA
+11,VA-DOS,Doctor of Osteopathy,DOS,1,VA
+11,VA-DPM,Podiatrist,DPM,1,VA
+11,VA-DVM,Veterinarian,DVM,1,VA
+11,VA-MDR,Medical Doctor,MDR,1,VA
+11,VA-MWF,Midwife,MWF,1,VA
+11,VA-NPR,Nurse Practitioner,NPR,1,VA
+11,VA-ODR,Optometrist,ODR,1,VA
+11,VA-PAS,Physician Assistant,PAS,1,VA
+11,VA-RPH,Pharmacist,RPH,1,VA
+9,VI-APN,Certified Advanced Nurse Practitioner,APN,1,VI
+9,VI-CNA,Certified Registered Nurse Anesthetist,CNA,1,VI
+9,VI-CNM,Certified Nurse Midwife,CNM,1,VI
+9,VI-CNS,Certified Nurse Specialist,CNS,1,VI
+9,VI-DCH,Doctor of Chiropractics,DCH,1,VI
+9,VI-DEN,Dentist,DEN,1,VI
+9,VI-DOS,Doctor of Osteopathy,DOS,1,VI
+9,VI-DPM,Podiatrist,DPM,1,VI
+9,VI-DVM,Veterinarian,DVM,1,VI
+9,VI-MDR,Medical Doctor,MDR,1,VI
+9,VI-MWF,Midwife,MWF,1,VI
+9,VI-NPR,Nurse Practitioner,NPR,1,VI
+9,VI-ODR,Optometrist,ODR,1,VI
+9,VI-PAS,Physician Assistant,PAS,1,VI
+9,VI-RPH,Pharmacist,RPH,1,VI
+14,VT-APN,Certified Advanced Nurse Practitioner,APN,1,VT
+14,VT-CNA,Certified Registered Nurse Anesthetist,CNA,1,VT
+14,VT-CNM,Certified Nurse Midwife,CNM,1,VT
+14,VT-CNS,Certified Nurse Specialist,CNS,1,VT
+14,VT-DCH,Doctor of Chiropractics,DCH,1,VT
+14,VT-DEN,Dentist,DEN,1,VT
+14,VT-DOS,Doctor of Osteopathy,DOS,1,VT
+14,VT-DPM,Podiatrist,DPM,1,VT
+14,VT-DVM,Veterinarian,DVM,1,VT
+14,VT-MDR,Medical Doctor,MDR,1,VT
+14,VT-MWF,Midwife,MWF,1,VT
+14,VT-NPR,Nurse Practitioner,NPR,1,VT
+14,VT-ODR,Optometrist,ODR,1,VT
+14,VT-PAS,Physician Assistant,PAS,1,VT
+14,VT-RPH,Pharmacist,RPH,1,VT
+2,WA-APN,Certified Advanced Nurse Practitioner,APN,1,WA
+2,WA-CNA,Certified Registered Nurse Anesthetist,CNA,1,WA
+2,WA-CNM,Certified Nurse Midwife,CNM,1,WA
+2,WA-CNS,Certified Nurse Specialist,CNS,1,WA
+2,WA-DCH,Doctor of Chiropractics,DCH,1,WA
+2,WA-DEN,Dentist,DEN,1,WA
+2,WA-DOS,Doctor of Osteopathy,DOS,1,WA
+2,WA-DPM,Podiatrist,DPM,1,WA
+2,WA-DVM,Veterinarian,DVM,1,WA
+2,WA-MDR,Medical Doctor,MDR,1,WA
+2,WA-MWF,Midwife,MWF,1,WA
+2,WA-NPR,Nurse Practitioner,NPR,1,WA
+2,WA-ODR,Optometrist,ODR,1,WA
+2,WA-PAS,Physician Assistant,PAS,1,WA
+2,WA-RPH,Pharmacist,RPH,1,WA
+6,WI-APN,Certified Advanced Nurse Practitioner,APN,1,WI
+6,WI-CNA,Certified Registered Nurse Anesthetist,CNA,1,WI
+6,WI-CNM,Certified Nurse Midwife,CNM,1,WI
+6,WI-CNS,Certified Nurse Specialist,CNS,1,WI
+6,WI-DCH,Doctor of Chiropractics,DCH,1,WI
+6,WI-DEN,Dentist,DEN,1,WI
+6,WI-DOS,Doctor of Osteopathy,DOS,1,WI
+6,WI-DPM,Podiatrist,DPM,1,WI
+6,WI-DVM,Veterinarian,DVM,1,WI
+6,WI-MDR,Medical Doctor,MDR,1,WI
+6,WI-MWF,Midwife,MWF,1,WI
+6,WI-NPR,Nurse Practitioner,NPR,1,WI
+6,WI-ODR,Optometrist,ODR,1,WI
+6,WI-PAS,Physician Assistant,PAS,1,WI
+6,WI-RPH,Pharmacist,RPH,1,WI
+11,WV-APN,Certified Advanced Nurse Practitioner,APN,1,WV
+11,WV-CNA,Certified Registered Nurse Anesthetist,CNA,1,WV
+11,WV-CNM,Certified Nurse Midwife,CNM,1,WV
+11,WV-CNS,Certified Nurse Specialist,CNS,1,WV
+11,WV-DCH,Doctor of Chiropractics,DCH,1,WV
+11,WV-DEN,Dentist,DEN,1,WV
+11,WV-DOS,Doctor of Osteopathy,DOS,1,WV
+11,WV-DPM,Podiatrist,DPM,1,WV
+11,WV-DVM,Veterinarian,DVM,1,WV
+11,WV-MDR,Medical Doctor,MDR,1,WV
+11,WV-MWF,Midwife,MWF,1,WV
+11,WV-NPR,Nurse Practitioner,NPR,1,WV
+11,WV-ODR,Optometrist,ODR,1,WV
+11,WV-PAS,Physician Assistant,PAS,1,WV
+11,WV-RPH,Pharmacist,RPH,1,WV
+3,WY-APN,Certified Advanced Nurse Practitioner,APN,1,WY
+3,WY-CNA,Certified Registered Nurse Anesthetist,CNA,1,WY
+3,WY-CNM,Certified Nurse Midwife,CNM,1,WY
+3,WY-CNS,Certified Nurse Specialist,CNS,1,WY
+3,WY-DCH,Doctor of Chiropractics,DCH,1,WY
+3,WY-DEN,Dentist,DEN,1,WY
+3,WY-DOS,Doctor of Osteopathy,DOS,1,WY
+3,WY-DPM,Podiatrist,DPM,1,WY
+3,WY-DVM,Veterinarian,DVM,1,WY
+3,WY-MDR,Medical Doctor,MDR,1,WY
+3,WY-MWF,Midwife,MWF,1,WY
+3,WY-NPR,Nurse Practitioner,NPR,1,WY
+3,WY-ODR,Optometrist,ODR,1,WY
+3,WY-PAS,Physician Assistant,PAS,1,WY
+3,WY-RPH,Pharmacist,RPH,1,WY
