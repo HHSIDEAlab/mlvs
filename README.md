@@ -115,7 +115,7 @@ Valid code examples include:<br></br>
 <td>A string containing the a code indicating the status of the license. Valid
 codes are: <br></br>
      "ACTIVE" (Active) <br></br>
-     "ACTIVE\_WITH\_RESTRICTIONS (Active with Restrictions) <br></br>
+     "ACTIVE_WITH_RESTRICTIONS (Active with Restrictions) <br></br>
      "EXPIRED" (Expired) <br></br>
      "REVOKED" (Revoked) <br></br>
      "DECEASED" (Deceased) <br></br>
