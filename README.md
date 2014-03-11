@@ -28,10 +28,10 @@ implementation that implements the specification.
 Understanding MLVS in 20 Seconds
 --------------------------------
 
-* The code format is STATE-LICENSE_TYPE-NUMBER (e.g. MD-MDR-12345 is a Medical Doctor (MDR)
-in Maryland (MD) with a license number of 12345.
+* The code format is `[STATE]-[LICENSE TYPE]-[NUMBER]` (e.g. MD-MDR-12345 is a
+Medical Doctor (MDR) in Maryland (MD) with a license number of 12345.
 
-* The URL format is /license/STATE/LICENSE_TYPE/NUMBER.json
+* The URL format is `/license/[STATE]/[LICENSE_TYPE]/[NUMBER].json`
 (e.g. https://example.com/license/MD-MDR-12345.json is a Medical doctor (MDR)
 in Maryland (MD) with a license number of 12345. The host `example.com` is used
 as an example.
