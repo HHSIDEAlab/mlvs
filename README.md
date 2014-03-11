@@ -79,8 +79,9 @@ A string that complies with this specification shall be formatted as follows:
 where:
 
 * [TWO-LETTER-STATE-CODE] is a two-letter abbreviation code for a US state or territory.
-* [THREE-LETTER-LICENSE-TYPE-CODE] is a three-letter medial license type code. For a complete list, see
-`USProviderLicenseTypesFeb2014.csv` in the `docs` sub-folder within this repository)
+* [THREE-LETTER-LICENSE-TYPE-CODE] is a three-letter medial license type code.
+For a complete list, see `USProviderLicenseTypesFeb2014.csv` in the `docs`
+sub-folder within this repository)
 *[LICENSE-NUMBER] is the license number or identifier.
 * Two dashes (`-`) shall seperate the three elements 
 
@@ -233,13 +234,14 @@ Examples
 
 The examples below are demonstrated with "curl", a command-line web client that
 is installed on Mac OSX and Linux and can be downloaded for Windows.
-Curl is just used as an example.  You could use many other tools or pretty
-much any programming language.
+Curl is just used as an example.  You could use many other tools or almost any
+programming language.
 
 
-Below is an example request using curl.  In this example, the server is
-"somelicenseauthority.example.com", the state is "WV", the license type is MDR,
-(Medical Doctor) and the license number is "234234534".
+In the curl example below, the server is
+"somelicenseauthority.example.com", the state is "WV", the license type is MDR
+(Medical Doctor), and the license number is "234234534".
+
 
     curl https://somelicenseauthority.example.com/license/WV/MDR/3242345345.json
 
@@ -262,7 +264,8 @@ The server responds with:
     "date_updated": "2014-01-30"
      }
 
-If we do the same thing again with the verbose "-v" option we can see the HTTP response code and the mimetype.
+If we do the same thing again with the verbose "-v" option we can see the HTTP
+response code and the mimetype.
 
     curl -v https://somelicenseauthority.example.com/license/CA/MDR/2342345345.json
 
