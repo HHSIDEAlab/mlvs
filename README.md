@@ -64,16 +64,6 @@ https://github.com/HHSIDEAlab/npi or http://npi.io for more information.
 
 
 
-
-
-
-The specification contains a startdard format for representing a medical license.
-
-
-This document contains the specification itself followed by information on a reference implementation.
-
-
-
 Medical License Verification Specification
 ==========================================
 
@@ -81,29 +71,34 @@ Medical License Verification Specification
 1. The Code
 -----------
 
-A string that complies with this specification shall contain:
+A string that complies with this specification shall be formatted as follows:
 
-A medical license shall be represented as a string containing the following 3 items:
 
-* The two-letter abbreviation code for state or US territory.
-* A dash `-`
-* The three-letter medial license type code as defined in `Medical License Universe CSV`. (See `docs` sub-folder within this repository)
-* A dash `-`
-* The license number or identifier.
+    [TWO-LETTER-STATE-CODE]-[THREE-LETTER-LICENSE-TYPE-CODE]-[LICENSE-NUMBER]
+
+where:
+
+* [TWO-LETTER-STATE-CODE] is a two-letter abbreviation code for a US state or territory.
+* [THREE-LETTER-LICENSE-TYPE-CODE] is a three-letter medial license type code. For a complete list, see
+`USProviderLicenseTypesFeb2014.csv` in the `docs` sub-folder within this repository)
+*[LICENSE-NUMBER] is the license number or identifier.
+* Two dashes (`-`) shall seperate the three elements 
 
 
 Examples:
+
 
     MD-MDR-3001234   # Medical Doctor, license 3001234 in Maryland
     AK-DEN-829281    # Dentist license, 829281 in Arkansas
     CO-DOS-908232    # Doctor of Osteopathy, license 908232, in Colorado
 
-Of course the format of the license number or identifier will vary by state and issuing body.
+The format of the license number or identifier will vary by state and
+issuing body.
 
 
 
-2 The URL (a RESTFul API)
--------------------------
+2 The URL 
+---------
 
 The specification also defines RESTful protocol that can be implmented without
 the need to write any software. Adherence of the specification can be achieved
@@ -148,7 +143,7 @@ Details About the Response
 
 <tr>
 <td>state</td>
-<td>A two-letter string representing the state..  This filed shall onlyuse
+<td>A two-letter string representing the state.  This filed shall onlyuse
 offical two-letter abbreviations. See https://www.usps.com/send/official-abbreviations.htm </td>
 <td>Y</td>
 </tr>
@@ -166,8 +161,8 @@ For example, "Medial Doctor" for license_type "MDR"</td>
 <tr>
 <td>license_type</td>
 <td>A three-letter string containing a code resenting a license type.
-Codes can be found in the document `ProviderLicenseUniverseFeb2014.csv` contained
-in this repository.
+Codes can be found in the document `USProviderLicenseTypesFeb2014.csv` contained
+in the docs folder of this repository.
 
 Valid license_type examples include:<br></br> 
 "MDR" (Medical Doctor)<br></br>
