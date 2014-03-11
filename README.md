@@ -22,13 +22,20 @@ The goals of MVLS are the following:
 * To define a very simple and common way for medical license information to be
 share as web-based resources. (i.e. an API)
 
-
-Contents
---------
-
-
 This repository contains both a technical specification and a reference
 implementation that implements the specification.
+
+Understanding MLVS in 20 Seconds
+--------------------------------
+
+* The code format is STATE-LICENSE_TYPE-NUMBER (e.g. MD-MDR-12345 is a Medical Doctor (MDR)
+in Maryland (MD) with a license number of 12345.
+
+* The URL format is /license/STATE/LICENSE_TYPE/NUMBER.json
+(e.g. https://example.com/license/MD-MDR-12345.json is a Medical doctor (MDR)
+in Maryland (MD) with a license number of 12345. The host `example.com` is used
+as an example.
+
 
 
 Background
