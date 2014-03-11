@@ -1,46 +1,80 @@
 Medical License Validation Specification/System (MVLS)
 ======================================================
 
+Version 0.0.3 (DRAFT)
+
+First Published: December 31, 2013
+
+Last Updated: March 10, 2014
+
+Autorative URL: https://github.com/HHSIDEAlab/mlvs
+
+
+
 MVLS refers to both a technical specification, "Medical License Verification
 Specification" and a system, "Medical License Verification System" a reference
 implementation for the Specification. Both the specification and system are
 described in this document.  This is a draft and should be considered in
 development. Comments and feedback are welcome.
 
-The goal of MVLS is to define a very simple and common way for medical license
-information to be shared. The specification is a simple RESTful protocol that
-can be implmented without the need to write any software. Adherence of the
-specification can be achieved by copying files to a web server with a
-predictable URL pattern.
+The goals of MVLS are the following:
 
-This document contains the specification itself followed by information on the
-system (a django-based reference implementation).
+
+* To define a common format for medical licenses.
+* To define a very simple and common way for medical license information to be shared.
+
+
+The specification contains a startdard format for representing a medical license.
+The specification also defines RESTful protocol that can be implmented without the need to write any software. Adherence of the specification can be achieved by simply copying files to a web server with a predictable URL pattern.
+
+This document contains the specification itself followed by information on a reference implementation.
+
 
 
 Medical License Verification Specification
 ==========================================
 
-Version 0.0.1 (DRAFT)
 
-First Published: December 31, 2013
+1.License Format
+----------------
 
-Last Updated: February 21, 2014
 
-Autorative URL: https://github.com/HHSIDEAlab/mlvs
+A medical license shall be represented as a string containing the following 3 items:
 
-To create a system that adheres to thisMedical License Verification Specification (MLVS) shall:
+* The two-letter abbreviation code for state or US territory,
+* The three-letter medial license type code as defined in `Medical License Universe CSV`. (See `docs` sub-folder within this repository)
+* The license number or identifier.
 
-* Use HTTP as the transport protocol and use the GET method.
+
+These three items shall always be seperated by dashes.
+
+Examples:
+
+    MD-MDR-3001234   # Medical Doctor, license 3001234 in Maryland
+    AK-DEN-829281    # Dentist license, 829281 in Arkansas
+    CO-DOS-908232 # Doctor of Osteopathy, license 908232, in Colorado
+
+Of course the format of the license number or identifier will vary by state and issuing body.
+
+
+
+2 RESTFul API
+=============
+
+
+The following text defines the RESTFul API.
+
+* Use HTTP as the transport protocol and the HTTP GET method.
 * Use SSL for encryption (HTTPS). Using HTTPS is used to mitigate the possibility of data tamprering in transit.
-* Implement a single URL with the following pattern: /license/[TWO-LETTER-STATE-CODE]/[LICENSE-NUMBER].json
+* Implement a single URL with the following pattern: /license/[TWO-LETTER-STATE-CODE]/[THREE-LETTER-LICENSE-TYPE-CODE]/[LICENSE-NUMBER].json
 * When a resource is found at the aformentioned URL, the HTTP response code 200 shall be returned.
 * When a resource is found at the aformentioned URL, the response mimetype shall be "application/json".
 * When a resource is found at the aformentioned URL, the response body shall contain a  single JSON object containg the following elements: "first\_name", "last\_name", "state", "license\_type", "number", "npi", "status", "created\_at", "updated\_at". "npi" is optional.  All other fields are required. Additional fields may be added to the object,  The order of fields is unimportant, hence a valid client reader should not rely on the ordering.  Exmplanations of each field follow below in the section titled, "More Details About the Response".
 * When a resource is NOT found at the aformentioned URL, a non-200 HTTP status, such as 404 or 303 is returned. when the response code is 200, the response body and mime-type are irrelevant and can be ignored. It is presumed the license information is not available.
 
 
-More Details About the Response
--------------------------------
+Details About the Response
+--------------------------
 
 <table>
 
@@ -86,12 +120,12 @@ Valid license_type examples include:<br></br>
 
 <tr>
 <td>code</td>
-<td>Concatenation of state code and license type.
+<td>Concatenation of state code and license type code and the license number or identifier. Sperated by dashes.
 
 Valid code examples include:<br></br> 
-"CA-MDR" (Medical Doctor) in California<br></br>
-"VA-DOS"(Doctor of Osteopathy) in Virginia<br></br>
-"NY-PAS" (Physician Assistant) in New York</td>
+"CA-MDR-12387123" (Medical Doctor) in California<br></br>
+"VA-DOS-232859"(Doctor of Osteopathy) in Virginia<br></br>
+"NY-PAS-98323" (Physician Assistant) in New York</td>
 <td>Y</td>
 </tr>
 
@@ -99,14 +133,14 @@ Valid code examples include:<br></br>
 
 <tr>
 <td>number</td>
-<td>A string containing the license number issued by the state</td>
+<td>A string containing the license number issued by the issuing authority.</td>
 <td>Y</td>
 </tr>
 
 
 <tr>
 <td>npi</td>
-<td>A string containing the National Provider Identifier (NPI) issued by CMS/NPPES</td>
+<td>A string containing the National Provider Identifier (NPI) issued by CMS/NPPES.</td>
 <td>N</td>
 </tr>
 
@@ -124,13 +158,13 @@ codes are: <br></br>
 </tr>
 
 <tr>
-<td>created\_at</td>
+<td>created_at</td>
 <td>The date this record was first created. Format YYYY-MM-DD.</td>
 <td>Y</td>
 </tr>
 
 <tr>
-<td>updated\_at</td>
+<td>updated_at</td>
 <td>The date this record was last updated. Format YYYY-MM-DD.</td>
 <td>Y</td>
 </tr>
@@ -153,7 +187,7 @@ Below is an example request using curl.  In this example, the server is
 "somelicenseauthority.example.com", the state is "WV", the license type is MDR,
 (Medical Doctor) and the license number is "234234534".
 
-    curl https://somelicenseauthority.example.com/license/WV-MDR/3242345345.json
+    curl https://somelicenseauthority.example.com/license/WV/MDR/3242345345.json
 
 The server responds with:
 
@@ -162,7 +196,8 @@ The server responds with:
     "last_name": "McCoy",
     "state": "WV",
     "license_type": "MDR",
-    "code": "WV-MDR",
+    "credential": "Medical Doctor", 
+    "code": "WV-MDR-3242345345",
     "number": "3242345345",
     "npi": "1323353456",
     "status": "ACTIVE",
@@ -175,7 +210,7 @@ The server responds with:
 
 If we do the same thing again with the verbose "-v" option we can see the HTTP response code and the mimetype.
 
-    curl -v https://somelicenseauthority.example.com/license/CA-MDR/2342345345.json
+    curl -v https://somelicenseauthority.example.com/license/CA/MDR/2342345345.json
 
 Responds with
 
@@ -189,7 +224,8 @@ Responds with
         "last_name": "Song",
         "state": "CA",
         "license_type": "MDR",
-        "code": "CA-MDR",
+        "credential": "Medical Doctor",
+        "code": "CA-MDR-3242345345",
         "number": "2342345345",
         "npi": "1223353456",
         "status": "ACTIVE",
@@ -203,16 +239,19 @@ Responds with
 Here is a negative example where the resource does not exist. We will use the
 "-I" flag to just read the response head.
 
-    curl -I https://somelicenseauthority.example.com/license/CA-MDR/999999999
+    curl -I https://somelicenseauthority.example.com/license/CA/DOS/999999999
 
-This response means there is no medical license issued in CA with the number
-999999999. The body of the response is unimportant, since there is no record.
+This response means there is no DOS license (Doctor of Osteopathy) issued in CA
+with the number 999999999. The body of the response is unimportant, since there
+is no record.
 
+    
     HTTP/1.0 404 NOT FOUND
     ...
 
-Implementation Notes
---------------------
+
+3. Implementation Notes
+-----------------------
 
 There are three ways to go about implementing this specification:
 
@@ -231,8 +270,9 @@ you like.
 3. _Reference Implementation_ - Use the free, open-source reference
 implementation described below.
 
-Medical License Verification System - Reference Implemenation
-===================================
+
+4. Reference Implemenation
+--------------------------
 
 The project contained within this GitHub repository is a reference implmentaion
 of the specification.  It uses Django and can be deployed on almost any operating
