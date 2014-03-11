@@ -130,13 +130,13 @@ Details About the Response
 </thead>
 
 <tr>
-<td>first\_name</td>
+<td>first_name</td>
 <td>A string of the provider's First Name</td>
 <td>Y</td>
 </tr>
 
 <tr>
-<td>last\_name</td>
+<td>last_name</td>
 <td>A string of the provider's Last Name</td>
 <td>Y</td>
 </tr>
@@ -174,7 +174,7 @@ Valid license_type examples include:<br></br>
 <tr>
 <td>code</td>
 <td>Implementation of part 1 of the MLVS specification. It is a concatenation of
-state code and license type code and the license number or identifier. Sperated by dashes.
+state code, the license type code, and the license number or identifier. Sperated by dashes.
 
 Valid code examples include:<br></br> 
 "CA-MDR-12387123" (Medical Doctor) in California<br></br>
