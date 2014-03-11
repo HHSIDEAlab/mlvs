@@ -39,14 +39,15 @@ in a uniform way.  To that end, this document desctribes very simple means for
 doing so.
 
 
-The first part of the specification that relates to the license `code`.  This is
-a unique string for representing a particular license.  For example, MA-MDR-1234567
-is a medical doctor in Massachusetts with the license number 1234567.
+The first part of the specification deines a command license `code`.  This `code`
+is a unique, predictable, string for representing a particular license.  For
+example, `MA-MDR-1234567` is a medical doctor in Massachusetts with the
+license number 1234567.
 
 
 The second part of the specification defines a `URL` structure for pointing to
 status information on particular license. For example
-http://example.com/license/MA/MDR/1234567.json would point to information about
+`https://example.com/license/MA/MDR/1234567.json` would point to information about
 the medical doctor in Massachusetts with the license number 1234567. As you might
 notice the `URL` contains the same the elements as the `code`. The first part is
 the state, the second part is the license type, and the third part is the license
@@ -80,21 +81,22 @@ Medical License Verification Specification
 1. The Code
 -----------
 
+A string that complies with this specification shall contain:
 
 A medical license shall be represented as a string containing the following 3 items:
 
-* The two-letter abbreviation code for state or US territory,
+* The two-letter abbreviation code for state or US territory.
+* A dash `-`
 * The three-letter medial license type code as defined in `Medical License Universe CSV`. (See `docs` sub-folder within this repository)
+* A dash `-`
 * The license number or identifier.
 
-
-These three items shall always be seperated by dashes.
 
 Examples:
 
     MD-MDR-3001234   # Medical Doctor, license 3001234 in Maryland
     AK-DEN-829281    # Dentist license, 829281 in Arkansas
-    CO-DOS-908232 # Doctor of Osteopathy, license 908232, in Colorado
+    CO-DOS-908232    # Doctor of Osteopathy, license 908232, in Colorado
 
 Of course the format of the license number or identifier will vary by state and issuing body.
 
@@ -102,7 +104,6 @@ Of course the format of the license number or identifier will vary by state and 
 
 2 The URL (a RESTFul API)
 -------------------------
-
 
 The specification also defines RESTful protocol that can be implmented without
 the need to write any software. Adherence of the specification can be achieved
@@ -156,7 +157,7 @@ offical two-letter abbreviations. See https://www.usps.com/send/official-abbrevi
 <tr>
 <td>credential</td>
 <td>A text string describing the type of credential.<br></br>
-For example, "Medial Doctor"</td>
+For example, "Medial Doctor" for license_type "MDR"</td>
 <td>Y</td>
 </tr>
 
@@ -177,7 +178,8 @@ Valid license_type examples include:<br></br>
 
 <tr>
 <td>code</td>
-<td>Concatenation of state code and license type code and the license number or identifier. Sperated by dashes.
+<td>Implementation of part 1 of the MLVS specification. It is a concatenation of
+state code and license type code and the license number or identifier. Sperated by dashes.
 
 Valid code examples include:<br></br> 
 "CA-MDR-12387123" (Medical Doctor) in California<br></br>
@@ -345,6 +347,7 @@ Default URL is `/admin`.
 Here is how to get started. The instruction are meant to be executed inside a terminal.
 The instructions assumes `python` and `pip` are already installed:
 
+   
    git clone https://github.com/HHSIDEAlab/mlvs.git
    cd mlvs
    pip install -r mlvs/requirements.py
@@ -352,6 +355,7 @@ The instructions assumes `python` and `pip` are already installed:
    
 When propted, say yes to create a super user so you can add licenses using the Django admin interface.
 Then start the development server.
+
 
    python manage.py runserver
 
