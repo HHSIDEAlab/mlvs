@@ -1,31 +1,73 @@
-Medical License Validation Specification/System (MVLS)
-======================================================
+Medical License Validation Specification (MVLS)
+===============================================
+
 
 Version 0.0.3 (DRAFT)
 
 First Published: December 31, 2013
 
-Last Updated: March 10, 2014
+Last Updated: March 11, 2014
 
 Autorative URL: https://github.com/HHSIDEAlab/mlvs
 
+_Comments and feedback are welcome._
 
-
-MVLS refers to both a technical specification, "Medical License Verification
-Specification" and a system, "Medical License Verification System" a reference
-implementation for the Specification. Both the specification and system are
-described in this document.  This is a draft and should be considered in
-development. Comments and feedback are welcome.
+Goals
+-----
 
 The goals of MVLS are the following:
 
 
-* To define a common format for medical licenses.
-* To define a very simple and common way for medical license information to be shared.
+* To define a common format for medical licenses (i.e. a standard code).
+* To define a very simple and common way for medical license information to be
+share as web-based resources. (i.e. an API)
+
+
+Contents
+--------
+
+
+This repository contains both a technical specification and a reference
+implementation that implements the specification.
+
+
+Background
+----------
+
+The vision here is get license issuing authroities to publish information
+in a uniform way.  To that end, this document desctribes very simple means for
+doing so.
+
+
+The first part of the specification that relates to the license `code`.  This is
+a unique string for representing a particular license.  For example, MA-MDR-1234567
+is a medical doctor in Massachusetts with the license number 1234567.
+
+
+The second part of the specification defines a `URL` structure for pointing to
+status information on particular license. For example
+http://example.com/license/MA/MDR/1234567.json would point to information about
+the medical doctor in Massachusetts with the license number 1234567. As you might
+notice the `URL` contains the same the elements as the `code`. The first part is
+the state, the second part is the license type, and the third part is the license
+number (or identifier).  This is intentionaly structured in such a way
+(using only HTTP GET) that the specification can be implemented using
+content delivery networks. In other words, it is designed to be very simple and
+inexpensive to implement.
+
+
+Although this document is a draft, its contents are incorporated into the NPPES
+Modernization effort.   In other words this specification is preciecely how the
+NPPES redesign automaticaly validates licenses. See
+https://github.com/HHSIDEAlab/npi or http://npi.io for more information.
+
+
+
+
 
 
 The specification contains a startdard format for representing a medical license.
-The specification also defines RESTful protocol that can be implmented without the need to write any software. Adherence of the specification can be achieved by simply copying files to a web server with a predictable URL pattern.
+
 
 This document contains the specification itself followed by information on a reference implementation.
 
@@ -35,8 +77,8 @@ Medical License Verification Specification
 ==========================================
 
 
-1.License Format
-----------------
+1. The Code
+-----------
 
 
 A medical license shall be represented as a string containing the following 3 items:
@@ -58,15 +100,20 @@ Of course the format of the license number or identifier will vary by state and 
 
 
 
-2 RESTFul API
-=============
+2 The URL (a RESTFul API)
+-------------------------
 
 
-The following text defines the RESTFul API.
+The specification also defines RESTful protocol that can be implmented without
+the need to write any software. Adherence of the specification can be achieved
+by simply copying files to a web server with a predictable URL pattern.
 
-* Use HTTP as the transport protocol and the HTTP GET method.
-* Use SSL for encryption (HTTPS). Using HTTPS is used to mitigate the possibility of data tamprering in transit.
-* Implement a single URL with the following pattern: /license/[TWO-LETTER-STATE-CODE]/[THREE-LETTER-LICENSE-TYPE-CODE]/[LICENSE-NUMBER].json
+
+The following text defines compliance with the URL specification.
+
+* The server shall use HTTP as the transport protocol and the server shall resoind to HTTP GET.
+* The resource shall employ SSL for encryption (HTTPS). Using HTTPS is used to mitigate the possibility of data tamprering in transit.
+* The server shall implement a single URL with the following pattern: /license/[TWO-LETTER-STATE-CODE]/[THREE-LETTER-LICENSE-TYPE-CODE]/[LICENSE-NUMBER].json
 * When a resource is found at the aformentioned URL, the HTTP response code 200 shall be returned.
 * When a resource is found at the aformentioned URL, the response mimetype shall be "application/json".
 * When a resource is found at the aformentioned URL, the response body shall contain a  single JSON object containg the following elements: "first\_name", "last\_name", "state", "license\_type", "number", "npi", "status", "created\_at", "updated\_at". "npi" is optional.  All other fields are required. Additional fields may be added to the object,  The order of fields is unimportant, hence a valid client reader should not rely on the ordering.  Exmplanations of each field follow below in the section titled, "More Details About the Response".
@@ -104,6 +151,16 @@ Details About the Response
 offical two-letter abbreviations. See https://www.usps.com/send/official-abbreviations.htm </td>
 <td>Y</td>
 </tr>
+
+
+<tr>
+<td>credential</td>
+<td>A text string describing the type of credential.<br></br>
+For example, "Medial Doctor"</td>
+<td>Y</td>
+</tr>
+
+
 
 <tr>
 <td>license_type</td>
@@ -279,8 +336,30 @@ of the specification.  It uses Django and can be deployed on almost any operatin
 system or web server.  The reference implementation is fully functional and
 assumes one or several managers will manage the data.By default the underlying
 database is SQLite, but this can be changed.
-Read more about Django here: http://djangoproject.com .
 
-License records can be added and updated via Django's standard administrative interface.
+
+License records can be added and updated via Django's standard administrative interface
+Default URL is `/admin`.
+
+
+Here is how to get started. The instruction are meant to be executed inside a terminal.
+The instructions assumes `python` and `pip` are already installed:
+
+   git clone https://github.com/HHSIDEAlab/mlvs.git
+   cd mlvs
+   pip install -r mlvs/requirements.py
+   python manage.py syncdb
+   
+When propted, say yes to create a super user so you can add licenses using the Django admin interface.
+Then start the development server.
+
+   python manage.py runserver
+
+Point your browser to `http://127.0.0.1:8000`.  To get tot he admin, navigate to
+http://127.0.0.1:8000/admin`.  Then look for 'Licenses' to view/add/edit/delete
+Licenses.  the URL to server the licenses is as described in the specification
+`[TWO-LETTER-STATE-CODE]/[THREE-LETTER-LICENSE-TYPE-CODE]/[LICENSE-NUMBER].json`
+
+Read more about Django here: http://djangoproject.com
 
 
