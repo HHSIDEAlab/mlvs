@@ -1,4 +1,4 @@
-Medical License Validation Specification (MVLS)
+Medical License Validation Specification (MLVS)
 ===============================================
 
 
@@ -6,7 +6,7 @@ Version 0.0.3 (DRAFT)
 
 First Published: December 31, 2013
 
-Last Updated: March 11, 2014
+Last Updated: August 8, 2014
 
 Autorative URL: https://github.com/HHSIDEAlab/mlvs
 

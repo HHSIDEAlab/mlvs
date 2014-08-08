@@ -1,4 +1,8 @@
 MAC,code,credential,license_type,provider_type,state
+2,AK, AK-UNK, Unknown Provider Type, UNK, 2, AK
+10,AL, AL-UNK, Unknown Provider Type, UNK, 2, AL
+7,AR, AR-UNK, Unknown Provider Type, UNK, 2, AR
+3, AZ, AK-UNK, Unknown Provider Type, UNK, 3, AZ
 2,AK-APN,Certified Advanced Nurse Practitioner,APN,1,AK
 2,AK-CNA,Certified Registered Nurse Anesthetist,CNA,1,AK
 2,AK-CNM,Certified Nurse Midwife,CNM,1,AK
