@@ -2,11 +2,11 @@ Medical License Validation Specification (MLVS)
 ===============================================
 
 
-Version 0.0.3 (DRAFT)
+Version 0.0.4 (DRAFT)
 
 First Published: December 31, 2013
 
-Last Updated: August 8, 2014
+Last Updated: August 12, 2014
 
 Autorative URL: https://github.com/HHSIDEAlab/mlvs
 
@@ -32,7 +32,7 @@ Understanding MLVS in 20 Seconds
 Medical Doctor (MDR) in Maryland (MD) with a license number of 12345.
 
 * The URL format is `/license/[STATE]/[LICENSE_TYPE]/[NUMBER].json`
-(e.g. `https://example.com/license/MD-MDR-12345.json` is a Medical doctor (MDR)
+(e.g. `https://example.com/license/MD/MDR/12345.json` is a Medical doctor (MDR)
 in Maryland (MD) with a license number of 12345. The host `example.com` is used
 as an example.
 
