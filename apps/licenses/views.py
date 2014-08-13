@@ -22,21 +22,18 @@ def lookup_via_license(request, state, license_type, number):
 def home(request):
     
     response = """
-Welcome to another instance of the Medical Licsense Verification System (MLVS).
-
-This server is configured for the state of %s.
+Welcome to the a server reference implemntation of Medical Licsense Verification
+System (MLVS).
 
 This is a reference implementation of a simple RESTFul web service that returns
-license status information
+license status information. Data is stored in a relational database of your choice.
+
+See https://github.com/HHSIDEAlab/mlvs for more information.
 
 Query MLVS with the provider's NPI or the state issued license number. Use HTTP
 GET to query like so:
-
-     https://[SERVER]/npi/[NPI]
      
-             -or-
-     
-     https://[SERVER]/license/[STATE_CODE]/[LICENSE_TYPE_CODE]/[LICENSE_NUMBER]     
+     http(s)://[SERVER]/license/[STATE_CODE]/[LICENSE_TYPE_CODE]/[LICENSE_NUMBER].json     
 
 If the HTTP response code is 200, then a JSON response containing the status
 information will be returned.  Below is an example.
@@ -52,7 +49,7 @@ information will be returned.  Below is an example.
     "npi": "1223353456",
     "status": "ACTIVE",
     "created_at": "2012-04-20",
-    "updated_at": "2013-04-20"
+    "updated_at": "2014-08-14"
     }
 
 
