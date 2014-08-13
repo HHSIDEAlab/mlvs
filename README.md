@@ -2,7 +2,7 @@ Medical License Validation Specification (MLVS)
 ===============================================
 
 
-Version 0.0.4 (DRAFT)
+Version 0.0.5 (DRAFT)
 
 First Published: December 31, 2013
 
@@ -42,11 +42,11 @@ Background
 ----------
 
 The vision here is get license issuing authroities to publish information
-in a uniform way.  To that end, this document desctribes very simple means for
+in a uniform way.  To that end, this document describes very simple means for
 doing so.
 
 
-The first part of the specification deines a command license `code`.  This `code`
+The first part of the specification defines a license `code`.  This `code`
 is a unique, predictable, string for representing a particular license.  For
 example, `MA-MDR-1234567` is a medical doctor in Massachusetts with the
 license number 1234567.
@@ -54,19 +54,19 @@ license number 1234567.
 
 The second part of the specification defines a `URL` structure for pointing to
 status information on particular license. For example
-`https://example.com/license/MA/MDR/1234567.json` would point to information about
+`https://example.com/license/MA/MDR/1234567.json`  points to information about
 the medical doctor in Massachusetts with the license number 1234567. As you might
 notice the `URL` contains the same the elements as the `code`. The first part is
 the state, the second part is the license type, and the third part is the license
-number (or identifier).  This is intentionaly structured in such a way
+number (or identifier).  This is intentionally structured in such a way
 (using only HTTP GET) that the specification can be implemented using
 content delivery networks. In other words, it is designed to be very simple and
 inexpensive to implement.
 
 
 Although this document is a draft, its contents are incorporated into the NPPES
-Modernization effort.   In other words this specification is preciecely how the
-NPPES redesign automaticaly validates licenses. See
+Modernization effort. In other words this specification is precisely how the
+NPPES redesign automatically validates licenses. See
 https://github.com/HHSIDEAlab/npi or http://npi.io for more information.
 
 
@@ -90,7 +90,7 @@ where:
 For a complete list, see `USProviderLicenseTypesFeb2014.csv` in the `docs`
 sub-folder within this repository)
 *[LICENSE-NUMBER] is the license number or identifier.
-* Two dashes (`-`) shall seperate the three elements 
+* Two dashes (`-`) shall separate the three elements 
 
 
 Examples:
@@ -108,19 +108,19 @@ issuing body.
 2 The URL 
 ---------
 
-The specification also defines RESTful protocol that can be implmented without
+The specification also defines RESTful protocol that can be implemented without
 the need to write any software. Adherence of the specification can be achieved
 by simply copying files to a web server with a predictable URL pattern.
 
 
 The following text defines compliance with the URL specification.
 
-* The server shall use HTTP as the transport protocol and the server shall resoind to HTTP GET.
-* The resource shall employ SSL for encryption (HTTPS). Using HTTPS is used to mitigate the possibility of data tamprering in transit.
+* The server shall use HTTP as the transport protocol and the server shall respond to HTTP GET.
+* The resource shall employ SSL for encryption (HTTPS). Using HTTPS is used to mitigate the possibility of data tampering in transit.
 * The server shall implement a single URL with the following pattern: /license/[TWO-LETTER-STATE-CODE]/[THREE-LETTER-LICENSE-TYPE-CODE]/[LICENSE-NUMBER].json
-* When a resource is found at the aformentioned URL, the HTTP response code 200 shall be returned.
-* When a resource is found at the aformentioned URL, the response mimetype shall be "application/json".
-* When a resource is found at the aformentioned URL, the response body shall contain a  single JSON object containg the following elements: "first\_name", "last\_name", "state", "license\_type", "number", "npi", "status", "created\_at", "updated\_at". "npi" is optional.  All other fields are required. Additional fields may be added to the object,  The order of fields is unimportant, hence a valid client reader should not rely on the ordering.  Exmplanations of each field follow below in the section titled, "More Details About the Response".
+* When a resource is found at the aforementioned URL, the HTTP response code 200 shall be returned.
+* When a resource is found at the aforementioned URL, the response mimetype shall be "application/json".
+* When a resource is found at the aforementioned URL, the response body shall contain a single JSON object containg the following elements: "first\_name", "last\_name", "state", "license\_type", "number", "npi", "status", "created\_at", "updated\_at". "npi" is optional.  All other fields are required. Additional fields may be added to the object,  The order of fields is unimportant, hence a valid client reader should not rely on the ordering.  Explanations of each field follow below in the section titled, "More Details About the Response".
 * When a resource is NOT found at the aformentioned URL, a non-200 HTTP status, such as 404 or 303 is returned. when the response code is 200, the response body and mime-type are irrelevant and can be ignored. It is presumed the license information is not available.
 
 
@@ -335,22 +335,41 @@ you like.
 implementation described below.
 
 
-4. Reference Implemenation
---------------------------
+4.  Reference Implemenation #1
+------------------------------
 
-The project contained within this GitHub repository is a reference implmentaion
-of the specification.  It uses Django and can be deployed on almost any operating
-system or web server.  The reference implementation is fully functional and
-assumes one or several managers will manage the data.By default the underlying
+The command line tool `csv2mlvs` converts a CSV file to a MLVS directory
+structure decribed in the previous sections.  This script may be used to easily
+create structure necessary so that all that is left to do is to upload the
+structure to a web server or content delivery network.
+
+This tool is part of `provider-data-tools`.  It can be installed using the
+following command.
+
+
+    pip install pdt
+
+
+Please see https://github.com/HHSIDEAlab/provider-data-tools for more
+information.
+
+
+
+5. Reference Implemenation #2
+-----------------------------
+
+The project contained within this GitHub repository is a full server reference
+implementaion of the specification in Django.  It can be deployed on almost any
+operating system or web server. By default the underlying
 database is SQLite, but this can be changed.
 
 
-License records can be added and updated via Django's standard administrative interface
-Default URL is `/admin`.
+License records can be added and updated via Django's standard administrative
+interface. The default URL is `/admin`.
 
 
-Here is how to get started. The instruction are meant to be executed inside a terminal.
-The instructions assumes `python` and `pip` are already installed:
+Here is how to get started. These instructions are meant to be executed inside a
+terminal. These instructions assume `python` and `pip` are already installed:
 
    
    git clone https://github.com/HHSIDEAlab/mlvs.git
@@ -358,8 +377,8 @@ The instructions assumes `python` and `pip` are already installed:
    pip install -r mlvs/requirements.py
    python manage.py syncdb
    
-When propted, say yes to create a super user so you can add licenses using the Django admin interface.
-Then start the development server.
+When prompted, say yes to create a super user so you can add licenses using the
+Django admin interface. Then start the development server like so.
 
 
    python manage.py runserver
@@ -370,5 +389,3 @@ Licenses.  the URL to server the licenses is as described in the specification
 `[TWO-LETTER-STATE-CODE]/[THREE-LETTER-LICENSE-TYPE-CODE]/[LICENSE-NUMBER].json`
 
 Read more about Django here: http://djangoproject.com
-
-
