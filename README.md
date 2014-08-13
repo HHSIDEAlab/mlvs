@@ -34,19 +34,20 @@ Medical Doctor (MDR) in Maryland (MD) with a license number of 12345.
 * The URL format is `/license/[STATE]/[LICENSE_TYPE]/[NUMBER].json`
 (e.g. `https://example.com/license/MD/MDR/12345.json` is a Medical doctor (MDR)
 in Maryland (MD) with a license number of 12345. The host `example.com` is used
-as an example.
+as an example.  The resouce at the URL is a simple, predictible structured document
+containing information about the license.
 
 
 
 Background
 ----------
 
-The vision here is get license issuing authroities to publish information
+The end goal here is to get license issuing authroities to publish information
 in a uniform way.  To that end, this document describes very simple means for
 doing so.
 
 
-The first part of the specification defines a license `code`.  This `code`
+The first part of MLVS defines a license `code`.  This `code`
 is a unique, predictable, string for representing a particular license.  For
 example, `MA-MDR-1234567` is a medical doctor in Massachusetts with the
 license number 1234567.
