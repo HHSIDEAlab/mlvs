@@ -8,7 +8,7 @@ from models import License, LicenseType
 
 def lookup_via_npi(request, state, npi):
     l = get_object_or_404(License, state=state, npi=npi)
-    return HttpResponse(l.as_json(), mimetype="application/json")
+    return HttpResponse(l.as_json(), content_type="application/json")
     
 
 def lookup_via_license(request, state, license_type, number):
@@ -17,7 +17,7 @@ def lookup_via_license(request, state, license_type, number):
     print state, license_type, number
     l = get_object_or_404(License, license_type__state=state, license_type__license_type=license_type, number=number)
     
-    return HttpResponse(l.as_json(), mimetype="application/json")
+    return HttpResponse(l.as_json(), content_type="application/json")
     
 def home(request):
     
@@ -57,4 +57,4 @@ If the HTTP response code is 404 or otherwise not 200, there is no answer on fil
 and the body of the response can be ignored because it is irrelevant.
     """ % (settings.DEFAULT_STATE)
 
-    return HttpResponse(response, mimetype="text/plain")
+    return HttpResponse(response, content_type="text/plain")
