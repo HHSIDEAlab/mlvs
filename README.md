@@ -89,7 +89,7 @@ Medical License Verification Specification
 1. The Code
 -----------
 
-A string that complies with this specification shall be formatted as follows:
+A string that adheres to the convention shall be formatted as follows:
 
 
     [TWO-LETTER-STATE-CODE]-[THREE-LETTER-LICENSE-TYPE-CODE]-[LICENSE-NUMBER]
