@@ -3,8 +3,9 @@ Medical License Validation Specification (MLVS)
 
 Version 0.0.5 (DRAFT)
 
-_First Published: December 31, 2013_
-_Last Updated: August 19, 2014_
+_Created December 31, 2013_
+
+_Updated: August 19, 2014_
 
 URL: https://github.com/HHSIDEAlab/mlvs
 
@@ -21,9 +22,10 @@ This repository contains both a technical specification and two reference
 implementations. The reference implementations are designed to help medical boards 
 quickly and inexpensivley implement mlvs.
 
-simplify 
-
-implementation  the specification.
+As noted this is a draft and CMS is interested in feedback from the community
+and medical license organizations in particular. If your organization would like to pilot 
+this functionality with CMS, as part of the NPPES Modernization Project (http://npi.io), please
+email alan.viars AT cms.hhs.gov.
 
 _Comments and feedback are welcome._
 
