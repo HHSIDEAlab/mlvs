@@ -14,7 +14,7 @@ Goals
 
 The goals of MVLS are to :
 
-* Codify medical licenses (i.e. a standard code).
+* Codify medical licenses (i.e. a standard coding convention).
 * Define a web-based microservice convention to represent medical license status information at predectiable URLs.
 
 
