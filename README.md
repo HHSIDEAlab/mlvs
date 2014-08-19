@@ -11,15 +11,19 @@ URL: https://github.com/HHSIDEAlab/mlvs
 Goals
 -----
 
-The goals of MVLS are:
+The goals of MVLS are to :
+
+* Codify medical licenses (i.e. a standard code).
+* Define a web-based microservice convention to represent medical license status information at predectiable URLs.
 
 
-* To define a common format for medical licenses (i.e. a standard code).
-* To define a very simple and common way for medical license information to be
-share as web-based resources. (i.e. an API)
+This repository contains both a technical specification and two reference
+implementations. The reference implementations are designed to help medical boards 
+quickly and inexpensivley implement mlvs.
 
-This repository contains both a technical specification and a reference
-implementation that implements the specification.
+simplify 
+
+implementation  the specification.
 
 _Comments and feedback are welcome._
 
@@ -353,6 +357,14 @@ following command.
 
 
     pip install pdt
+
+    csv2mlvs my.csv output
+
+Where `my.csv` is a CSV containing provider data and `output` is the directory 
+where output files and subdirectories are created. Upload the output to an
+accesible web server. Using a CDN for this task is very inexpensive way to 
+accomplish this.
+
 
 
 Please see https://github.com/HHSIDEAlab/provider-data-tools for more
