@@ -1,21 +1,17 @@
 Medical License Validation Specification (MLVS)
 ===============================================
 
-
 Version 0.0.5 (DRAFT)
 
-First Published: December 31, 2013
+_First Published: December 31, 2013_
+_Last Updated: August 19, 2014_
 
-Last Updated: August 12, 2014
-
-Autorative URL: https://github.com/HHSIDEAlab/mlvs
-
-_Comments and feedback are welcome._
+URL: https://github.com/HHSIDEAlab/mlvs
 
 Goals
 -----
 
-The goals of MVLS are the following:
+The goals of MVLS are:
 
 
 * To define a common format for medical licenses (i.e. a standard code).
@@ -25,17 +21,25 @@ share as web-based resources. (i.e. an API)
 This repository contains both a technical specification and a reference
 implementation that implements the specification.
 
+_Comments and feedback are welcome._
+
+
 Understanding MLVS in 20 Seconds
 --------------------------------
 
-* The code format is `[STATE]-[LICENSE TYPE]-[NUMBER]` (e.g. MD-MDR-12345 is a
-Medical Doctor (MDR) in Maryland (MD) with a license number of 12345.
+* Licensing organizations are identified by state and the type of license.
+State is a two-letter code and license types are three-letter codes defined by CMS.   
+This list can be found in this repository under the `docs` folder in CSV format.
 
-* The URL format is `/license/[STATE]/[LICENSE_TYPE]/[NUMBER].json`
-(e.g. `https://example.com/license/MD/MDR/12345.json` is a Medical doctor (MDR)
-in Maryland (MD) with a license number of 12345. The host `example.com` is used
-as an example.  The resouce at the URL is a simple, predictible structured document
-containing information about the license.
+* A coded license takes the form  `[STATE]-[LICENSE TYPE]-[NUMBER]` (e.g. DC-MDR-12345 
+is a Medical Doctor (MDR) in the District of Columbia with a license number of 12345.
+
+* The URL format similar but uses directy structure instead of dashes.
+A license URL takes the form  `/license/[STATE]/[LICENSE_TYPE]/[NUMBER].json`
+For example,  `https://example.com/license/MD/MDR/12345.json` is a Medical doctor (MDR)
+in Maryland (MD) with a license number of 12345. The resouce at the URL is a simple, 
+predictible structured document containing information about the license, most chiefly status
+information.
 
 
 
