@@ -116,8 +116,16 @@ issuing body.
 
 
 
-2 The URL 
----------
+2.1 The URL
+------------
+
+ The URL is in the following format.
+
+     /license/[TWO-LETTER-STATE-CODE]/[THREE-LETTER-LICENSE-TYPE-CODE]/[LICENSE-NUMBER].json
+
+
+2.2 Resource Response Details
+-----------------------------
 
 The specification also defines RESTful protocol that can be implemented without
 the need to write any software. Adherence of the specification can be achieved
