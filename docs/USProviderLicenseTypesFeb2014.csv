@@ -1,8 +1,5 @@
 MAC,code,credential,license_type,provider_type,state
-2,AK, AK-UNK, Unknown Provider Type, UNK, 2, AK
-10,AL, AL-UNK, Unknown Provider Type, UNK, 2, AL
-7,AR, AR-UNK, Unknown Provider Type, UNK, 2, AR
-3, AZ, AK-UNK, Unknown Provider Type, UNK, 3, AZ
+2,AK-UNK, Unknown Provider Type, UNK, 2, AK
 2,AK-APN,Certified Advanced Nurse Practitioner,APN,1,AK
 2,AK-CNA,Certified Registered Nurse Anesthetist,CNA,1,AK
 2,AK-CNM,Certified Nurse Midwife,CNM,1,AK
@@ -18,6 +15,7 @@ MAC,code,credential,license_type,provider_type,state
 2,AK-ODR,Optometrist,ODR,1,AK
 2,AK-PAS,Physician Assistant,PAS,1,AK
 2,AK-RPH,Pharmacist,RPH,1,AK
+10,AL-UNK, Unknown Provider Type, UNK, 2, AL
 10,AL-APN,Certified Advanced Nurse Practitioner,APN,1,AL
 10,AL-CNA,Certified Registered Nurse Anesthetist,CNA,1,AL
 10,AL-CNM,Certified Nurse Midwife,CNM,1,AL
@@ -33,6 +31,7 @@ MAC,code,credential,license_type,provider_type,state
 10,AL-ODR,Optometrist,ODR,1,AL
 10,AL-PAS,Physician Assistant,PAS,1,AL
 10,AL-RPH,Pharmacist,RPH,1,AL
+7,AR-UNK, Unknown Provider Type, UNK, 2, AR
 7,AR-APN,Certified Advanced Nurse Practitioner,APN,1,AR
 7,AR-CNA,Certified Registered Nurse Anesthetist,CNA,1,AR
 7,AR-CNM,Certified Nurse Midwife,CNM,1,AR
@@ -48,6 +47,7 @@ MAC,code,credential,license_type,provider_type,state
 7,AR-ODR,Optometrist,ODR,1,AR
 7,AR-PAS,Physician Assistant,PAS,1,AR
 7,AR-RPH,Pharmacist,RPH,1,AR
+3, AK-UNK, Unknown Provider Type, UNK, 3, AZ
 3,AZ-APN,Certified Advanced Nurse Practitioner,APN,1,AZ
 3,AZ-CNA,Certified Registered Nurse Anesthetist,CNA,1,AZ
 3,AZ-CNM,Certified Nurse Midwife,CNM,1,AZ
