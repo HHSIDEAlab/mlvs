@@ -47,7 +47,7 @@ MAC,code,credential,license_type,provider_type,state
 7,AR-ODR,Optometrist,ODR,1,AR
 7,AR-PAS,Physician Assistant,PAS,1,AR
 7,AR-RPH,Pharmacist,RPH,1,AR
-3, AK-UNK, Unknown Provider Type, UNK, 3, AZ
+3, AZ-UNK, Unknown Provider Type, UNK, 3, AZ
 3,AZ-APN,Certified Advanced Nurse Practitioner,APN,1,AZ
 3,AZ-CNA,Certified Registered Nurse Anesthetist,CNA,1,AZ
 3,AZ-CNM,Certified Nurse Midwife,CNM,1,AZ
